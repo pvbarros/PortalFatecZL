@@ -1,0 +1,67 @@
+html,
+body {
+	height: 100%;
+}
+
+header h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.page-header{
+	text-align: center;
+	border-bottom-color: #B22222;
+}
+
+#titulo-docs{
+	text-align: left;
+	padding-top: 20px;
+}
+
+#titulo-inscri-trans, #titulo-horario-trans, #titulo-local-trans, #titulo-divulg-trans,
+	#titulo-matricula-trans{
+	position: relative;
+	text-align: center;
+	padding-top: 33px;
+}
+
+#conteudo-horario, #conteudo-funcionario, #conteudo-solicitacoes, #conteudo-docs, #conteudo-infos-trans, 
+	#conteudo-inscri-trans, #conteudo-horario-trans, #conteudo-local-trans, 
+		#conteudo-divulg-trans, #conteudo-matricula-trans{
+	position: relative;
+	justify-content: center;
+	text-align: center;
+}
+
+#evidenciar{
+	font-size: 16px;
+	font-weight: bolder;
+	font-style: italic;
+}
+
+.glyphicon.btn-default{
+	position: relative;
+	left: 27px;
+}
+
+.img-hover:hover{
+	opacity: 0.8;
+}
+
+#img-post-noticias{
+	height: 375px;
+	width: 830px;
+}
+
+footer {
+	background-color: #333;
+	color: #FFF;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+footer address:last-child {
+	margin-bottom: 0;
+}
+
+

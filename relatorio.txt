@@ -1,0 +1,5 @@
+MENU SECRETARIA
+ 
+- Primeiro foi feito o sub menu "Informações e Documentos", seguindo o protótipo feito para desenvolvimento do Front. No questionário dos alunos, o tipo de informação que mais pediram foram que tivessem os horários da secretaria e documentos no site. Entretanto, essas informações já existem atualmente, o que fizemos foi evidenciar esse conteúdo para que o aluno ache a informação de forma rápida e não necessite de agilidade ou conhecimento prévio do site para saber o conteúdo. Deixamos mais intuitivo para que o aluno vá direto na informação que procura e está precisando no momento.
+
+- Em seguida, foi desenvolvido o sub menu "Transferência". Esse tópico não foi citado em nenhum momento nas respostas do questionário para o alunos. Por isso, não mexemos no conteúdo que apresenta atualmente, somente evidenciamos as informações. Como o foco é atender a necessidade do aluno, foi decidido em conjunto que os resultados seriam documentos anexados no site e não uma tabela dinâmica.
