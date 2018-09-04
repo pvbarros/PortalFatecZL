@@ -8,7 +8,7 @@ header h1 {
 	margin-bottom: 0;
 }
 
-.page-header{
+.page-header, #titulo-col-pesq-tcc{
 	text-align: center;
 	border-bottom-color: #B22222;
 }
@@ -27,7 +27,7 @@ header h1 {
 
 #conteudo-horario, #conteudo-funcionario, #conteudo-solicitacoes, #conteudo-docs, #conteudo-infos-trans, 
 	#conteudo-inscri-trans, #conteudo-horario-trans, #conteudo-local-trans, 
-		#conteudo-divulg-trans, #conteudo-matricula-trans{
+		#conteudo-divulg-trans, #conteudo-matricula-trans, #conteudo-pesquisar-tcc{
 	position: relative;
 	justify-content: center;
 	text-align: center;

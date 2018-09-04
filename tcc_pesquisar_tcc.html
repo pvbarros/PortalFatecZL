@@ -35,11 +35,12 @@
 		
 		<h2>Pesquisar TCC</h2>
 		<div id="corpo-pesquisar-tcc">
-			<p>Área dedicada a pesquisa de TCCs dos semestres passados, basta inserir uma das informações.</p>
+			<h4>Área dedicada a pesquisa de TCCs dos semestres passados.</h4> 
+				<p id="conteudo-pesquisar-tcc">Campos <span id="evidenciar">Ano-semestre</span> e <span id="evidenciar">Curso</span> são obrigatórios.</p>
 		</div>
 
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-6 col-md-offset-3">
 				<div class="well">
 					<form id="form-pesquisar-tcc" role="form">
 						<div class="form-group">
@@ -52,14 +53,14 @@
 						</div>
 						<div class="form-group">
 							<label for="AnoSemestre">Ano-semestre:</label>
-							<select class="form-control" id="ano-semestre-pesquisar-tcc" tabindex="3">
+							<select class="form-control" id="ano-semestre-pesquisar-tcc" tabindex="3" data-validation-required-message="Campo obrigatório" required>
 								<option selected></option>						
 							</select>
 						</div>
 						<div class="form-group">
 							<label for="Curso">Curso:</label>
-							<select class="form-control" id="selecionar-curso" data-error="Selecione um curso" tabindex="4">
-								<option selected></option>
+							<select class="form-control" id="selecionar-curso" data-error="Selecione um curso" tabindex="4" data-validation-required-message="Campo obrigatório" required>
+								<option selected disabled="true"></option>
 								<option>Análise e Desenvolvimento de Sistemas</option>
 								<option>Comércio Exterior</option>
 								<option>Gestão Empresarial</option>
@@ -68,19 +69,40 @@
 								<option>Polímeros</option>
 							</select>
 						</div>
-						<button type="submit" class="btn btn-primary" name="buscar" tabindex="5">Buscar</button>
-
+						<button type="submit" class="btn btn-primary" name="buscar-pesquisar-tcc" tabindex="5">Buscar</button>
+						<button type="reset" class="btn btn-primary" name="limpar-pesquisar-tcc" tabindex="6">Limpar</button>
 					</form>
 				</div>
 			</div>
-		</div>
 
+			<div class="col-md-12">
+				<div class="well">
+					<div class="table-responsive">
+						<table class="table table-bordered">
+							<thread>
+									<th scope="col" id="titulo-col-pesq-tcc">AUTOR</th>
+									<th scope="col" id="titulo-col-pesq-tcc">TÍTULO</th>
+									<th scope="col" id="titulo-col-pesq-tcc">CURSO</th>
+									<th scope="col" id="titulo-col-pesq-tcc">ANO-SEMESTRE</th>
+							</thread>
+							<thbody>
+								<tr>
+									<td>PALOMA VIECELLI BARROS</td>
+									<td>UMA VIAGEM NO TEMPO</td>
+									<td>COMÉRCIO EXTERIOR</td>
+									<td>2018-2</td>
+								</tr>
+							</thbody>
+							
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 
-
-
-
+	<script src="js/validator.min.js"></script>
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/navbar-animation-fix.js"></script>	
