@@ -13,21 +13,17 @@ header h1 {
 	border-bottom-color: #B22222;
 }
 
-#titulo-docs{
-	text-align: left;
-	padding-top: 20px;
-}
-
 #titulo-inscri-trans, #titulo-horario-trans, #titulo-local-trans, #titulo-divulg-trans,
-	#titulo-matricula-trans{
+	#titulo-matricula-trans, #titulo-docs-sec{
 	position: relative;
 	text-align: center;
 	padding-top: 33px;
 }
 
-#conteudo-horario, #conteudo-funcionario, #conteudo-solicitacoes, #conteudo-docs, #conteudo-infos-trans, 
-	#conteudo-inscri-trans, #conteudo-horario-trans, #conteudo-local-trans, 
-		#conteudo-divulg-trans, #conteudo-matricula-trans, #conteudo-pesquisar-tcc{
+#conteudo-horario-sec, #conteudo-funcionario-sec, #conteudo-solicitacoes-sec, #conteudo-docs-sec, #conteudo-infos-trans, 
+	#conteudo-inscri-trans, #conteudo-horario-trans, #conteudo-local-trans, #conteudo-divulg-trans, 
+		#conteudo-matricula-trans, #conteudo-pesquisar-tcc, #conteudo-emprestimos-biblio, #conteudo-horario-biblio, 
+			#conteudo-reserva-biblio, #conteudo-renova-biblio, #conteudo-cesta-biblio, #conteudo-wifi-biblio{
 	position: relative;
 	justify-content: center;
 	text-align: center;
