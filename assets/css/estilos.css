@@ -21,10 +21,8 @@ header h1 {
 	padding-top: 33px;
 }
 
-#titulo-acervo-biblio{
-	position: relative;
-	text-align: left;
-	padding-top: 13px;
+#titulo-reserva-biblio, #titulo-renova-biblio, #titulo-cesta-biblio, #titulo-wifi-biblio{
+	padding-top: 10px;
 }
 
 #conteudo-horario-sec, #conteudo-funcionario-sec, #conteudo-solicitacoes-sec, #conteudo-docs-sec, #conteudo-infos-trans, 
