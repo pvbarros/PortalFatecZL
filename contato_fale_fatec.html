@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>Faculdade de Tecnologia da Zona Leste</title>
+</head>
+<body>
+
+<!-- CABEÇALHO -->
+	<header>
+			<nav class="navbar navbar-default">
+				<div class="container">
+
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<a class="navbar-brand" href="#">Fatec ZL</a>
+					</div>
+				</div>
+			</nav>
+	</header>
+
+	<!-- SEÇÃO CORPO FALE COM A FATEC -->
+	<section class="container" id="fale-fatec-contato">
+		
+		<h2>Fale com a Fatec</h2>
+		<hr>
+
+		<div id="conteudo-fale-contato">
+			<p>O <span id="evidenciar">“Fale com a Fatec”</span> é mais uma iniciativa da Fatec Zona Leste para melhorar a comunicação na unidade. Sugestões, reclamações, comentários serão bem-vindos para o aprimoramento de nossa faculdade. </p>
+			<p>Este objeto tem a finalidade de tratar assuntos de infraestrutura e gestão da unidade. Assuntos acadêmicos e pedagógicos devem ser tratados com professor(es) e coordenação de curso pelas vias comuns, respeitando assim a hierarquia da instituição.</p>
+		</div>
+	
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="well">
+					<form id="form-fale-contato" role="form">
+						<div class="form-group">
+							<label for="Nome">Nome:</label>
+							<input type="text" class="form-control" name="nome-fale-contato" id="nome-fale-contato" placeholder="Digite seu nome" tabindex="1" required>
+						</div>
+						<div class="form-group">
+							<label for="RA">R.A:</label>
+							<input type="number" class="form-control" name="ra-fale-contato" id="ra-fale-contato" placeholder="Somente números" tabindex="2" required>
+						</div>
+						<div class="form-group">
+							<label for="Email">E-mail:</label>
+							<input type="email" class="form-control" name="email-fale-contato" id="email-fale-contato" placeholder="Digite seu e-mail" tabindex="3" required="">
+						</div>
+						<div class="form-group">
+							<label for="Curso">Curso:</label>
+							<select class="form-control" id="curso-fale-contato" tabindex="4">
+								<option selected disabled="true"></option>
+								<option>Análise e Desenvolvimento de Sistemas</option>
+								<option>Comércio Exterior</option>
+								<option>Gestão Empresarial</option>
+								<option>Gestão Empresarial EAD</option>
+								<option>Logística</option>
+								<option>Polímeros</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="Periodo">Período:</label>
+							<select class="form-control" id="periodo-fale-contato" tabindex="5">
+								<option selected disabled="true"></option>
+								<option>Manhã</option>
+								<option>Tarde</option>
+								<option>Noite</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="Assunto">Assunto:</label>
+							<select class="form-control" id="assunto-fale-contato" tabindex="6">
+								<option selected disabled="true"></option>
+								<option>Sugestão</option>
+								<option>Reclamação</option>
+								<option>Elogio</option>
+								<option>Outros</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="Area">Área:</label>
+							<select class="form-control" id="area-fale-contato" tabindex="7">
+								<option selected disabled="true"></option>
+								<option>Coordenação</option>
+								<option>Direção</option>
+								<option>DTI</option>
+								<option>Diretoria de Serviços</option>
+								<option>Estágio</option>
+								<option>Laboratório</option>
+								<option>Limpeza</option>
+								<option>Outros</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="Mensagem">Mensagem:</label>
+							<textarea class="form-control" name="msg-fale-contato" id="msg-fale-contato" tabindex="8" rols="10" cols="50" tabindex="8"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary" name="enviar-ficha" tabindex="9">Enviar</button>
+						<button type="reset" class="btn btn-primary" name="limpar" tabindex="10">Limpar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/validator.min.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/navbar-animation-fix.js"></script>
+
+</body>
+</html>
