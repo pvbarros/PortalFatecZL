@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>Faculdade de Tecnologia da Zona Leste</title>
+</head>
+<body>
+
+<!-- CABEÇALHO -->
+	<header>
+			<nav class="navbar navbar-default">
+				<div class="container">
+
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<a class="navbar-brand" href="#">Fatec ZL</a>
+					</div>
+				</div>
+			</nav>
+	</header>
+
+	<!-- SEÇÃO CORPO SUPORTE DTI -->
+	<section class="container" id="suporte-dti">
+		
+		<h2>Suporte DTI <small>Manutenção Interna</small></h2>
+		<hr>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="page-header" id="titulo-suporte-contato">
+					<h4>Suporte DTI Fatec Zona Leste
+				</div>
+				<div id="conteudo-suporte-contato">
+					<p>O DTI é o departamento responsável pelo gerenciamento e manutenção das redes e equipamentos de informática dos departamentos administrativos e laboratórios da Fatec Zona Leste.</p>
+					<p>Através do formulário abaixo, você poderá abrir um chamado de manutenção em caso de dano ou mau funcionamento de qualquer equipamento de informática ou rede de um departamento ou laboratório.</p>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="page-header" id="titulo-responsaveis-contato">
+					<h4>Rsponsáveis pelo Departamento</h4>
+				</div>
+				<div id="conteudo-responsaveis-contato">
+					<p>Edson Company Colalto Junior - Analista de Suporte e Gestão</p>
+					<p>José Maria da Silva - Analista de Suporte e Gestão</p>
+					<p>Alessandra Souza da Silva - Estagiária</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+
+	<!-- SEÇÃO FORM PARA ABRIR CHAMADO -->
+	<section class="container" id="suporte-chamado-contato">
+
+		
+
+		<div class="row">
+			<div class="col-md-8">
+				<h4>Preencha o formulário abaixo para abrir um chamado</h4>
+				<div class="well">
+					<form id="form-suporte-contato" role="form">
+						<div class="form-group">
+							<label for="Nome">Nome:</label>
+							<input type="text" class="form-control" name="nome-suporte-contato" id="nome-suporte-contato" placeholder="Digite seu nome" tabindex="1" data-validation-required-message="Campo obrigatório" required>
+						</div>
+						<div class="form-group">
+							<label for="Email">E-mail:</label>
+							<input type="email" class="form-control" name="email-suporte-contato" id="email-suporte-contato" placeholder="Digite seu e-mail" tabindex="2" data-validation-required-message="Campo obrigatório" required> 
+						</div>
+						<div class="form-group">
+							<label for="LocalProblema">Local do problema:</label>
+							<select id="local-suporte-contato" class="form-control" tabindex="3" data-validation-required-message="Campo obrigatório" required>
+								<option selected disabled="true"></option>
+								<option>Aquário</option>
+								<option>Auditório</option>
+								<option>Bloco C - Ensaios</option>
+								<option>Bloco C - Injetoras</option>
+								<option>Coordenação</option>
+								<option>Corredor-WiFi</option>
+								<option>Direção</option>
+								<option>Diretoria de Serviços</option>
+								<option>Estágio</option>
+								<option>Estágio - Coordenadores</option>
+								<option>Estágio - Professores</option>
+								<option>Laboratório 101</option>
+								<option>Laboratório 102</option>
+								<option>Laboratório 103</option>
+								<option>Laboratório 104</option>
+								<option>Laboratório 201</option>
+								<option>Laboratório 202</option>
+								<option>Laboratório 203</option>
+								<option>Laboratório 204</option>
+								<option>Sala 105</option>
+								<option>Sala 106</option>
+								<option>Sala 107</option>
+								<option>Sala 108</option>
+								<option>Sala 109</option>
+								<option>Sala 110</option>
+								<option>Sala 111</option>
+								<option>Sala 112</option>
+								<option>Sala 113</option>
+								<option>Sala 114</option>
+								<option>Sala 205</option>
+								<option>Sala 206</option>
+								<option>Sala 207</option>
+								<option>Sala 208</option>
+								<option>Sala 209</option>
+								<option>Sala 210</option>
+								<option>Sala 211</option>
+								<option>Sala 212</option>
+								<option>Sala 213</option>
+								<option>Sala 214</option>
+								<option>Sala dos professores</option>
+								<option>Secretaria</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="DescProblema">Descrição do problema:</label>
+							<textarea class="form-control" name="desc-suporte-contato" id="desc-suporte-contato" placeholder="Descreva o problema detalhadamente, incluindo o nome do computador se necessário" tabindex="4" rols="10" cols="50" data-validation-required-message="Campo obrigatório" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary" name="enviar-ficha" tabindex="9">Enviar</button>
+						<button type="reset" class="btn btn-primary" name="limpar" tabindex="10">Limpar</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div id="titulo-contato-suporte">
+					<h4>Contato</h4>
+				</div>
+				<div id="conteudo-contato-suporte">
+					<p><i class="glyphicon glyphicon-envelope"></i> 
+						<abbr title="Email">E</abbr>: <a href="mailto:f111ti@cps.sp.gov.br">f111ti@cps.sp.gov.br</a></p>
+					<p><span >E-mail MSDNAA: local.ue111@cps.sp.gov.br</span></p>
+				</div>
+
+				
+			</div>
+		</div>
+		
+	</section>
+
+
+	<script src="js/validator.min.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/navbar-animation-fix.js"></script>
+
+</body>
+</html>

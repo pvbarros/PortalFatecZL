@@ -8,6 +8,10 @@ header h1 {
 	margin-bottom: 0;
 }
 
+textarea{
+	resize: vertical;
+}
+
 .page-header, #titulo-col-pesq-tcc{
 	position: relative;
 	text-align: center;
@@ -29,7 +33,8 @@ header h1 {
 	#conteudo-inscri-trans, #conteudo-horario-trans, #conteudo-local-trans, #conteudo-divulg-trans, 
 		#conteudo-matricula-trans, #conteudo-pesquisar-tcc, #conteudo-emprestimos-biblio, #conteudo-horario-biblio, 
 			#conteudo-reserva-biblio, #conteudo-renova-biblio, #conteudo-cesta-biblio, #conteudo-wifi-biblio,
-				#conteudo-fale-contato{
+				#conteudo-fale-contato, #conteudo-suporte-contato, #conteudo-responsaveis-contato, 
+					#conteudo-contato-suporte{
 	position: relative;
 	justify-content: center;
 	text-align: center;

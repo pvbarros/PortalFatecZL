@@ -47,15 +47,15 @@
 					<form id="form-fale-contato" role="form">
 						<div class="form-group">
 							<label for="Nome">Nome:</label>
-							<input type="text" class="form-control" name="nome-fale-contato" id="nome-fale-contato" placeholder="Digite seu nome" tabindex="1" required>
+							<input type="text" class="form-control" name="nome-fale-contato" id="nome-fale-contato" placeholder="Digite seu nome" tabindex="1" data-validation-required-message="Campo obrigatório" required>
 						</div>
 						<div class="form-group">
 							<label for="RA">R.A:</label>
-							<input type="number" class="form-control" name="ra-fale-contato" id="ra-fale-contato" placeholder="Somente números" tabindex="2" required>
+							<input type="number" class="form-control" name="ra-fale-contato" id="ra-fale-contato" placeholder="Somente números" data-validation-required-message="Campo obrigatório" tabindex="2" required>
 						</div>
 						<div class="form-group">
 							<label for="Email">E-mail:</label>
-							<input type="email" class="form-control" name="email-fale-contato" id="email-fale-contato" placeholder="Digite seu e-mail" tabindex="3" required="">
+							<input type="email" class="form-control" name="email-fale-contato" id="email-fale-contato" placeholder="Digite seu e-mail" tabindex="3" data-validation-required-message="Campo obrigatório" required="">
 						</div>
 						<div class="form-group">
 							<label for="Curso">Curso:</label>
@@ -71,7 +71,7 @@
 						</div>
 						<div class="form-group">
 							<label for="Periodo">Período:</label>
-							<select class="form-control" id="periodo-fale-contato" tabindex="5">
+							<select class="form-control" id="periodo-fale-contato" data-validation-required-message="Campo obrigatório" tabindex="5" required>
 								<option selected disabled="true"></option>
 								<option>Manhã</option>
 								<option>Tarde</option>
@@ -80,7 +80,7 @@
 						</div>
 						<div class="form-group">
 							<label for="Assunto">Assunto:</label>
-							<select class="form-control" id="assunto-fale-contato" tabindex="6">
+							<select class="form-control" id="assunto-fale-contato" data-validation-required-message="Campo obrigatório" tabindex="6" required>
 								<option selected disabled="true"></option>
 								<option>Sugestão</option>
 								<option>Reclamação</option>
@@ -90,7 +90,7 @@
 						</div>
 						<div class="form-group">
 							<label for="Area">Área:</label>
-							<select class="form-control" id="area-fale-contato" tabindex="7">
+							<select class="form-control" id="area-fale-contato" data-validation-required-message="Campo obrigatório" tabindex="7" required>
 								<option selected disabled="true"></option>
 								<option>Coordenação</option>
 								<option>Direção</option>
@@ -104,7 +104,7 @@
 						</div>
 						<div class="form-group">
 							<label for="Mensagem">Mensagem:</label>
-							<textarea class="form-control" name="msg-fale-contato" id="msg-fale-contato" tabindex="8" rols="10" cols="50" tabindex="8"></textarea>
+							<textarea class="form-control" name="msg-fale-contato" id="msg-fale-contato" rols="10" cols="50" data-validation-required-message="Campo obrigatório" tabindex="8" required></textarea>
 						</div>
 						<button type="submit" class="btn btn-primary" name="enviar-ficha" tabindex="9">Enviar</button>
 						<button type="reset" class="btn btn-primary" name="limpar" tabindex="10">Limpar</button>
