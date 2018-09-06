@@ -28,7 +28,8 @@ header h1 {
 #conteudo-horario-sec, #conteudo-funcionario-sec, #conteudo-solicitacoes-sec, #conteudo-docs-sec, #conteudo-infos-trans, 
 	#conteudo-inscri-trans, #conteudo-horario-trans, #conteudo-local-trans, #conteudo-divulg-trans, 
 		#conteudo-matricula-trans, #conteudo-pesquisar-tcc, #conteudo-emprestimos-biblio, #conteudo-horario-biblio, 
-			#conteudo-reserva-biblio, #conteudo-renova-biblio, #conteudo-cesta-biblio, #conteudo-wifi-biblio{
+			#conteudo-reserva-biblio, #conteudo-renova-biblio, #conteudo-cesta-biblio, #conteudo-wifi-biblio,
+				#conteudo-fale-contato{
 	position: relative;
 	justify-content: center;
 	text-align: center;
