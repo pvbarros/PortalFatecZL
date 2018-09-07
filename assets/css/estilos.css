@@ -12,38 +12,38 @@ textarea{
 	resize: vertical;
 }
 
-.page-header, #titulo-col-pesq-tcc{
+.page-header{
 	position: relative;
 	text-align: center;
 	border-bottom-color: #B22222;
 }
 
-#titulo-inscri-trans, #titulo-horario-trans, #titulo-local-trans, #titulo-divulg-trans,
-	#titulo-matricula-trans, #titulo-docs-sec{
-	position: relative;
-	text-align: center;
+#titulo-docs-sec{
 	padding-top: 33px;
 }
 
-#titulo-reserva-biblio, #titulo-renova-biblio, #titulo-cesta-biblio, #titulo-wifi-biblio{
-	padding-top: 10px;
+#oculta{
+	display: none;
 }
 
-#conteudo-horario-sec, #conteudo-funcionario-sec, #conteudo-solicitacoes-sec, #conteudo-docs-sec, #conteudo-infos-trans, 
-	#conteudo-inscri-trans, #conteudo-horario-trans, #conteudo-local-trans, #conteudo-divulg-trans, 
-		#conteudo-matricula-trans, #conteudo-pesquisar-tcc, #conteudo-emprestimos-biblio, #conteudo-horario-biblio, 
-			#conteudo-reserva-biblio, #conteudo-renova-biblio, #conteudo-cesta-biblio, #conteudo-wifi-biblio,
-				#conteudo-fale-contato, #conteudo-suporte-contato, #conteudo-responsaveis-contato, 
-					#conteudo-contato-suporte{
+.table-responsive{
+	padding-top: 23px;
+}
+
+.titulo-biblio{
+	padding-top: 13px;
+}
+
+.conteudo-pagina{
 	position: relative;
 	justify-content: center;
 	text-align: center;
 }
 
-#evidenciar{
+.evidenciar{
 	font-size: 16px;
 	font-weight: bolder;
-	font-style: italic;
+	font-style: italic;	
 }
 
 .glyphicon.btn-default{
@@ -55,7 +55,7 @@ textarea{
 	opacity: 0.8;
 }
 
-#img-post-noticias{
+.img-post-noticias{
 	height: 375px;
 	width: 830px;
 }
