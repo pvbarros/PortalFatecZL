@@ -13,49 +13,44 @@
 
 <!-- CABEÇALHO -->
 	<header>
-			<nav class="navbar navbar-default">
-				<div class="container">
 
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-
-						<a class="navbar-brand" href="#">Fatec ZL</a>
-					</div>
-				</div>
-			</nav>
 	</header>
 
 	<!-- SEÇÃO CORPO FALE COM A FATEC -->
 	<section class="container" id="fale-fatec-contato">
-		
-		<h2>Fale com a Fatec</h2>
-		<hr>
 
-		<div id="conteudo-fale-contato">
-			<p>O <span id="evidenciar">“Fale com a Fatec”</span> é mais uma iniciativa da Fatec Zona Leste para melhorar a comunicação na unidade. Sugestões, reclamações, comentários serão bem-vindos para o aprimoramento de nossa faculdade. </p>
+		<div class="row">
+            <div class="col-lg-12">
+                <h2>Fale com a Fatec <small>Sugestões e Reclamações</small></h2>
+                <hr>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="active">Fale com a Fatec</li>
+                </ol>
+            </div>
+        </div>
+
+		<div>
+			<p>O <span class="evidenciar">“Fale com a Fatec”</span> é mais uma iniciativa da Fatec Zona Leste para melhorar a comunicação na unidade. Sugestões, reclamações, comentários serão bem-vindos para o aprimoramento de nossa faculdade.</p>
 			<p>Este objeto tem a finalidade de tratar assuntos de infraestrutura e gestão da unidade. Assuntos acadêmicos e pedagógicos devem ser tratados com professor(es) e coordenação de curso pelas vias comuns, respeitando assim a hierarquia da instituição.</p>
 		</div>
 	
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 				<div class="well">
-					<form id="form-fale-contato" role="form">
+					<form id="form-fale-contato" role="form" method="post" action="mail.js" onsubmit="return validarOculta();">
 						<div class="form-group">
 							<label for="Nome">Nome:</label>
-							<input type="text" class="form-control" name="nome-fale-contato" id="nome-fale-contato" placeholder="Digite seu nome" tabindex="1" data-validation-required-message="Campo obrigatório" required>
+							<input type="text" class="form-control" name="nome-fale-contato" id="nome-fale-contato" placeholder="Digite seu nome" tabindex="1" aria-required="true" required>
 						</div>
 						<div class="form-group">
 							<label for="RA">R.A:</label>
-							<input type="number" class="form-control" name="ra-fale-contato" id="ra-fale-contato" placeholder="Somente números" data-validation-required-message="Campo obrigatório" tabindex="2" required>
+							<input type="number" class="form-control" name="ra-fale-contato" id="ra-fale-contato" placeholder="Somente números" tabindex="2" aria-required="true" required>
 						</div>
 						<div class="form-group">
 							<label for="Email">E-mail:</label>
-							<input type="email" class="form-control" name="email-fale-contato" id="email-fale-contato" placeholder="Digite seu e-mail" tabindex="3" data-validation-required-message="Campo obrigatório" required="">
+							<input type="email" class="form-control" name="email-fale-contato" id="email-fale-contato" placeholder="Digite seu e-mail" tabindex="3" aria-required="true" required>
 						</div>
 						<div class="form-group">
 							<label for="Curso">Curso:</label>
@@ -71,7 +66,7 @@
 						</div>
 						<div class="form-group">
 							<label for="Periodo">Período:</label>
-							<select class="form-control" id="periodo-fale-contato" data-validation-required-message="Campo obrigatório" tabindex="5" required>
+							<select class="form-control" id="periodo-fale-contato" data-validation-required-message="Campo obrigatório" tabindex="5" aria-required="true" required>
 								<option selected disabled="true"></option>
 								<option>Manhã</option>
 								<option>Tarde</option>
@@ -80,7 +75,7 @@
 						</div>
 						<div class="form-group">
 							<label for="Assunto">Assunto:</label>
-							<select class="form-control" id="assunto-fale-contato" data-validation-required-message="Campo obrigatório" tabindex="6" required>
+							<select class="form-control" id="assunto-fale-contato" onchange="escondediv(oculta, assunto);" tabindex="6" aria-required="true" required>
 								<option selected disabled="true"></option>
 								<option>Sugestão</option>
 								<option>Reclamação</option>
@@ -89,8 +84,14 @@
 							</select>
 						</div>
 						<div class="form-group">
+							<div id="oculta">
+								<label for="Qual">Qual?</label>
+								<input type="text" class="form-control" name="outros-fale-contato" id="outros-fale-contato" aria-required="true" required>
+							</div>
+						</div>
+						<div class="form-group">
 							<label for="Area">Área:</label>
-							<select class="form-control" id="area-fale-contato" data-validation-required-message="Campo obrigatório" tabindex="7" required>
+							<select class="form-control" id="area-fale-contato" tabindex="7" aria-required="true" required>
 								<option selected disabled="true"></option>
 								<option>Coordenação</option>
 								<option>Direção</option>
@@ -104,7 +105,7 @@
 						</div>
 						<div class="form-group">
 							<label for="Mensagem">Mensagem:</label>
-							<textarea class="form-control" name="msg-fale-contato" id="msg-fale-contato" rols="10" cols="50" data-validation-required-message="Campo obrigatório" tabindex="8" required></textarea>
+							<textarea class="form-control" name="msg-fale-contato" id="msg-fale-contato" rols="10" cols="50" tabindex="8" aria-required="true" required></textarea>
 						</div>
 						<button type="submit" class="btn btn-primary" name="enviar-ficha" tabindex="9">Enviar</button>
 						<button type="reset" class="btn btn-primary" name="limpar" tabindex="10">Limpar</button>
@@ -112,6 +113,7 @@
 				</div>
 			</div>
 		</div>
+		<hr>
 	</section>
 
 	<script src="js/validator.min.js"></script>

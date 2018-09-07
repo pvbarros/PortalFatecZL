@@ -13,28 +13,23 @@
 
 <!-- CABEÇALHO -->
 	<header>
-			<nav class="navbar navbar-default">
-				<div class="container">
 
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-
-						<a class="navbar-brand" href="#">Fatec ZL</a>
-					</div>
-				</div>
-			</nav>
 	</header>
 
 	<!-- SEÇÃO INFORMAÇÕES BIBLIOTECA -->
 	<section class="container" id="infos-biblio">
 
-		<h2>Biblioteca <small>Informações gerais</small></h2>
-		<hr>
+		<div class="row">
+            <div class="col-lg-12">
+                <h2>Biblioteca <small>Informações Gerais</small></h2>
+                <hr>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="active">Informações Biblioteca</li>
+                </ol>
+            </div>
+        </div>
 
 		<!-- INFORMAÇÕES DE HORARIO E EMPRESTIMO -->
 		<div class="row">
@@ -42,9 +37,9 @@
 				<div class="page-header" id="titulo-horario-biblio">
 					<h4>Horário de Funcionamneto</h4>
 				</div>
-				<div id="conteudo-horario-biblio">
+				<div class="conteudo-pagina">
 					<p>Segunda à Sexta-feira das 08:h00 às 21:45.</p>
-					<p>Estamos localizados no <span id="evidenciar">Prédio A</span> da <span id="evidenciar">Etec da Zona Leste.</span></p>
+					<p>Estamos localizados no <span class="evidenciar">Prédio A</span> da <span class="evidenciar">Etec da Zona Leste.</span></p>
 				</div>
 			</div>
 
@@ -52,8 +47,8 @@
 				<div class="page-header" id="titulo-emprestimos-biblio">
 					<h4>Empréstimos</h4>
 				</div>
-				<div id="conteudo-emprestimos-biblio">
-					<p>Empréstimo domiciliar <span id="evidenciar">(07 dias)</span></p>
+				<div class="conteudo-pagina">
+					<p>Empréstimo domiciliar <span class="evidenciar">(07 dias)</span></p>
 					<p>Empréstimo local</p>
 					<p>Empréstimo entre bibliotecas com instituições conveniadas (EEB)</p>
 				</div>
@@ -64,19 +59,19 @@
 		<div class="row">
 			
 			<div class="col-md-6">
-				<div class="page-header" id="titulo-reserva-biblio">
+				<div class="page-header titulo-biblio">
 					<h4>Reserva</h4>
 				</div>
-				<div id="conteudo-reserva-biblio">
+				<div class="conteudo-pagina">
 					<p>Deve ser feita no balcão de atendimento. O usuário que fez a reserva será notificado por telefone, quando a obra estiver disponível.</p>
 						<p>O não comparecimento no prazo de 24 horas, libera a reserva para o próximo da lista. Não havendo outros interessados, a obra retornará ao acervo.</p>
 				</div>
 			</div>
 			<div class="col-md-6">
-				<div class="page-header" id="titulo-renova-biblio">
+				<div class="page-header titulo-biblio">
 					<h4>Renovação</h4>
 				</div>
-				<div id="conteudo-renova-biblio">
+				<div class="conteudo-pagina">
 					<p>Deve ser feita pessoalmente no balcão do atendimento com o material em mãos. Se houver reserva da obra a ser renovada ou atrasos de devolução e ausência de regularização de débitos não será possível a renovação.</p>
 				</div>
 			</div>
@@ -85,24 +80,25 @@
 		<!--INFORMAÇÕES DA CESTA E WIFI -->
 		<div class="row">
 			<div class="col-md-6">
-				<div class="page-header" id="titulo-cesta-biblio">
+				<div class="page-header titulo-biblio">
 					<h4>Cesta (Circulação Especial com Sorteio Trazer e Apoiar)</h4>
 				</div>
-				<div id="conteudo-cesta-biblio">
+				<div class="conteudo-pagina">
 					<p>Projeto de incentivo à leitura e estímulo à frequência dos usuários na Biblioteca e circulação pontual de livros. Sorteio semestral:</p>
-					<p><span id="evidenciar">1° semestre – cesta de Páscoa.</span></p>
-					<p><span id="evidenciar">2° semestre – cesta de Natal.</span></p>
+					<p><span class="evidenciar">1° semestre – cesta de Páscoa.</span></p>
+					<p><span class="evidenciar">2° semestre – cesta de Natal.</span></p>
 				</div>
 			</div>
 			<div class="col-md-6">
-				<div class="page-header" id="titulo-wifi-biblio">
+				<div class="page-header titulo-biblio">
 					<h4>Acesso à Internet</h4>
 				</div>
-				<div id="conteudo-wifi-biblio">
+				<div class="conteudo-pagina">
 					<p>Sinal Wi-Fi. Computadores para apoio à pesquisa.</p>
 				</div>
 			</div>
 		</div>
+		<hr>
 	</section>
 
 	<script src="assets/js/jquery.js"></script>

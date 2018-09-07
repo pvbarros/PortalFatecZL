@@ -13,89 +13,87 @@
 
 <!-- CABEÇALHO -->
 	<header>
-			<nav class="navbar navbar-default">
-				<div class="container">
 
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-
-						<a class="navbar-brand" href="#">Fatec ZL</a>
-					</div>
-				</div>
-			</nav>
 	</header>
 
 	<!-- SEÇÃO CORPO PESQUISAR TCC-->
 	<section class="container" id="pesquisar-tcc">
 		
-		<h2>Pesquisar TCC <small>Consulta de trabalhos passados</small></h2>
-		<hr>
-		<div id="corpo-pesquisar-tcc"> 
-			<p id="conteudo-pesquisar-tcc">Campos Ano-semestre e Curso são <span id="evidenciar">obrigatórios</span>.</p>
-		</div>
+		<div class="row">
+            <div class="col-lg-12">
+                <h2>Pesquisar TCC <small>Consulta de trabalhos passados</small></h2>
+                <hr>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="active">Pesquisar TCC</li>
+                </ol>
+            </div>
+        </div>
 
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
-				<div class="well">
-					<form id="form-pesquisar-tcc" role="form">
-						<div class="form-group">
-							<label for="autor">Autor:</label>
-							<input type="text" class="form-control" name="autor-pesquisar-tcc" id="autor-pesquisar-tcc" size="40" placeholder="Digite o nome do autor" tabindex="1">
-						</div>
-						<div class="form-group">
-							<label for="titulo">Título:</label>
-							<input type="text" class="form-control" name="titulo-pesquisar-tcc" id="titulo-pesquisar-tcc" size="60" placeholder="Digite o título ou parte dele" tabindex="2">
-						</div>
-						<div class="form-group">
-							<label for="AnoSemestre">Ano-semestre:</label>
-							<select class="form-control" id="ano-semestre-pesquisar-tcc" tabindex="3" data-validation-required-message="Campo obrigatório" required>
-								<option selected></option>						
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="Curso">Curso:</label>
-							<select class="form-control" id="selecionar-curso" data-error="Selecione um curso" tabindex="4" data-validation-required-message="Campo obrigatório" required>
-								<option selected disabled="true"></option>
-								<option>Análise e Desenvolvimento de Sistemas</option>
-								<option>Comércio Exterior</option>
-								<option>Gestão Empresarial</option>
-								<option>Gestão Empresarial EAD</option>
-								<option>Logística</option>
-								<option>Polímeros</option>
-							</select>
-						</div>
-						<button type="submit" class="btn btn-primary" name="buscar-pesquisar-tcc" tabindex="5">Buscar</button>
-						<button type="reset" class="btn btn-primary" name="limpar-pesquisar-tcc" tabindex="6">Limpar</button>
-					</form>
+				<div class="conteudo-pagina"> 
+					<p>Campos <span class="evidenciar">Ano-semestre</span> e <span class="evidenciar">Curso</span> são obrigatórios.</p>
 				</div>
+					<div class="well">
+						<form id="form-pesquisar-tcc" role="form" data-toggle="validator" method="post" action="pesquisatcc.js">
+							<div class="form-group">
+								<label for="autor">Autor:</label>
+								<input type="text" class="form-control" name="autor-pesquisar-tcc" id="autor-pesquisar-tcc" size="40" placeholder="Digite o nome do autor" tabindex="1">
+							</div>
+							<div class="form-group">
+								<label for="titulo">Título:</label>
+								<input type="text" class="form-control" name="titulo-pesquisar-tcc" id="titulo-pesquisar-tcc" size="60" placeholder="Digite o título ou parte dele" tabindex="2">
+							</div>
+							<div class="form-group">
+								<label for="AnoSemestre">Ano-semestre:</label>
+								<select class="form-control" id="ano-semestre-pesquisar-tcc" tabindex="3" aria-required="true" required>
+									<option selected></option>						
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="Curso">Curso:</label>
+								<select class="form-control" id="selecionar-curso" data-error="Selecione um curso" tabindex="4" aria-required="true" required>
+									<option selected disabled="true"></option>
+									<option>Análise e Desenvolvimento de Sistemas</option>
+									<option>Comércio Exterior</option>
+									<option>Gestão Empresarial</option>
+									<option>Gestão Empresarial EAD</option>
+									<option>Logística</option>
+									<option>Polímeros</option>
+								</select>
+							</div>
+							<button type="submit" class="btn btn-primary" name="buscar-pesquisar-tcc" tabindex="5">Buscar</button>
+							<button type="reset" class="btn btn-primary" name="limpar-pesquisar-tcc" tabindex="6">Limpar</button>
+						</form>
+					</div>
 			</div>
 
 			<div class="col-md-12">
-				<div class="well">
-					<div class="table-responsive">
-						<table class="table table-bordered">
-							<thread>
-									<th scope="col" id="titulo-col-pesq-tcc">AUTOR</th>
-									<th scope="col" id="titulo-col-pesq-tcc">TÍTULO</th>
-									<th scope="col" id="titulo-col-pesq-tcc">CURSO</th>
-									<th scope="col" id="titulo-col-pesq-tcc">ANO-SEMESTRE</th>
-							</thread>
-							<thbody>
-								<tr>
-									<td>PALOMA VIECELLI BARROS</td>
-									<td>UMA VIAGEM NO TEMPO</td>
-									<td>COMÉRCIO EXTERIOR</td>
-									<td>2018-2</td>
-								</tr>
-							</thbody>
-							
-						</table>
-					</div>
+				<div class="table-responsive">
+					<table class="table table-hover table-striped list-group-flush">
+						<thread>
+								<th scope="col" class="page-header">AUTOR</th>
+								<th scope="col" class="page-header">TÍTULO</th>
+								<th scope="col" class="page-header">CURSO</th>
+								<th scope="col" class="page-header">ANO-SEMESTRE</th>
+						</thread>
+						<thbody>
+							<tr>
+								<td>PALOMA VIECELLI BARROS</td>
+								<td>UMA VIAGEM NO TEMPO</td>
+								<td>COMÉRCIO EXTERIOR</td>
+								<td>2018-2</td>
+							</tr>
+							<tr>
+								<td>ZÉ DA ESQUINA</td>
+								<td>O FUTURO A NOS PERTENCE</td>
+								<td>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</td>
+								<td>2018-2</td>
+							</tr>
+						</thbody>
+					</table>
 				</div>
 			</div>
 		</div>
