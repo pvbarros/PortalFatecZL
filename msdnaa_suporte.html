@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>Faculdade de Tecnologia da Zona Leste</title>
+</head>
+<body>
+
+<!-- CABEÇALHO -->
+	<header>
+
+	</header>
+
+	<!-- SEÇÃO FORM SUPORTE -->
+	<section class="container" id="suporte-msdnaa">
+
+		<!-- TITULO DA PAGINA -->
+		<div class="row">
+            <div class="col-lg-12">
+                <h2>Suporte MSDNAA <small>Fatec Zona Leste</small></h2>
+                <hr>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="active">Suporte MSDNAA</li>
+                </ol>
+            </div>
+        </div>
+
+        <div>
+        	<p class="evidenciar">Leia atentamente as instruções abaixo:</p>
+			<p>Informamos que as contas dos alunos de 1º semestre já foram criadas. O sistema SYSMAIL dispara uma mensagem automática para o e-mail pessoal cadastrado no SIGA. Verifiquem suas caixas de entrada e de SPAM.</p>
+			<p>Se você já possui uma conta e deseja apenas redefinir a senha, <a href="https://sysmail.cps.sp.gov.br/web/reset-email-password/request-reset-password.aspx" target="_blank"><span class="evidenciar">CLIQUE AQUI</span></a>.</p>
+			<p>Se você é aluno veterano e não possui conta, ou não lembra sua conta e sua senha, preencha o formulário abaixo.</p>
+        </div>
+
+        <div class="row">
+        	<div class="col-md-8">
+        		<div class="well">
+        			<form id="form-suporte" name="form-suporte" role="form" data-toggle="validator" method="post" action="cadmsdnaa.js" onsubmit="return validaCpfNome();">
+        				<div class="form-group">
+        					<label for="Assunto">Assunto:</label>
+        					<select class="form-control" id="assunto" name="assunto" tabindex="1" aria-required="true" required>
+        						<option selected disabled></option>
+								<option>Criação de conta</option>
+								<option>Redefinição de senha</option>
+								<option>Reativar Microsoft Imagine</option>
+							</select>
+        				</div>
+        				<div class="form-group">
+        					<label for="Cpf">CPF:</label>
+        					<input type="number" class="form-control" id="cpf-suporte" name="cpf-suporte" placeholder="Somente números" tabindex="2">
+        				</div>
+        				<div class="form-group">
+        					<label for="NomeCompleto">Nome completo:</label>
+        					<input type="text" class="form-control" id="nome-suporte" name="nome-suporte" placeholder="Digite seu nome completo" tabindex="3" size="40">
+        				</div>
+        				<div class="form-group">
+        					<label for="semestre">Semestre:</label>
+        					<select id="semestre" class="form-control" tabindex="4" name="semestre" aria-required="true" required>
+        						<option selected disabled></option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+							</select>
+        				</div>
+        				<div class="form-group">
+        					<label for="curso">Curso:</label>
+        					<select id="curso" class="form-control" tabindex="5" name="curso" aria-required="true" required>
+        						<option selected disabled></option>
+								<option>Análise e desenvolvimento de sistemas</option>
+								<option>Comércio Exterior</option>
+								<option>Gestão Empresarial</option>
+								<option>Logística</option>
+								<option>Polímeros</option>
+							</select>
+        				</div>
+        				<div class="form-group">
+        					<label for="EmailPessoal">E-mail pessoal:</label>
+        					<input type="email" class="form-control" id="email-suporte" tabindex="6" placeholder="Digite seu e-mail pessoal" name="email-suporte" aria-required="true" required>
+        				</div>
+        				<div class="form-group">
+        					<label for="EmailFatec">E-mail corporativo (@fatec):</label>
+        					<input type="email" class="form-control" id="email-corp-sup" name="email-corp-sup" tabindex="7" placeholder="Se possuir, digite e-mail corporativo">
+        				</div>
+        				<button type="submit" class="btn btn-primary" name="enviar" tabindex="5">Enviar</button>
+						<button type="reset" class="btn btn-primary" name="limpar" tabindex="6">Limpar</button>
+        			</form>
+        		</div>
+        	</div>
+        </div>
+        <hr>
+	</section>
+
+	<script src="js/validator.min.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/navbar-animation-fix.js"></script>	
+
+</body>
+</html>
