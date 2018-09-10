@@ -33,10 +33,6 @@ header h1 {
 	left: 27px;
 }
 
-.table-responsive{
-	padding-top: 23px;
-}
-
 textarea{
 	resize: vertical;
 }
@@ -88,7 +84,7 @@ textarea{
 /*------------------------*/
 
 
-/* --CALENDARIO ACADEMICO-*/
+/* --SUB CALENDARIO ACADEMICO-*/
 .img-cal-acad{
 	width: 100%;
 	height: 100%;
@@ -97,18 +93,7 @@ textarea{
 .titulo-secundario{
 	text-align: center;	
 }
-/*------------------------*/
-
-
-/* ---MENU SOBRE FATEC--- */
-#titulo-historia{
-	margin-top: 30px;
-}
-
-#img-historia{
-	image-rendering: 
-}
-/*------------------------*/
+/*---------------------------*/
 
 
 /* ----MENU BIBLIOTECA---- */
@@ -118,12 +103,12 @@ textarea{
 /*-------------------------*/
 
 
-/* MENU DIRETORIO ACADEMICO */
+/* --SUB DIRETORIO ACADEMICO-- */
 .img-top-post{
 	width: 100%;
 	height: 400px;
 }
-/*-------------------------*/
+/*----------------------------*/
 
 
 /* ----MENU SECRETARIA---- */
@@ -132,9 +117,47 @@ textarea{
 }
 /*-------------------------*/
 
+
+/* SUB ACHE O PROF */
+i.glyphicon-chevron-down{
+	font-size: 0.8em;
+}
+
+.panel-group{
+	padding-top: 10px;
+}
+/*-------------------------*/
+
+
+/* ---SUB PESQUISAR TCC--- */
+.table-responsive{
+	padding-top: 23px;
+}
+/*-------------------------*/
+
+
+/* ---SUB FALE COM FATEC-- */
 #oculta{
 	display: none;
 }
+/*-------------------------*/
+
+
+/* ----SUB INFRA FATEC----*/
+.img-infra{
+	width: 100%;
+	height: 375px;
+}
+/*-------------------------*/
+
+
+/* ----SUB SOBRE FATEC---- */
+.img-sobre-fatec{
+	width: 100%;
+	height: 465px;
+	image-rendering: auto;
+}
+/*-------------------------*/
 
 
 footer {
