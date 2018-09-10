@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>Faculdade de Tecnologia da Zona Leste</title>
+</head>
+<body>
+
+<!-- CABEÇALHO -->
+	<header>
+
+	</header>
+
+	<!-- SEÇÃO INFORMAÇÕES ACHE O PROF -->
+	<section class="container">
+
+		<!-- TITULO DA PAGINA -->
+		<div class="row">
+            <div class="col-lg-12">
+                <h2>Ache o Professor <small>Busca de Professor</small></h2>
+                <hr>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="active">Ache o Professor</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- TITULO E INTRO SOBRE ACHE O PROF -->
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="page-header">
+					<h3>Ache o Professor!</h3>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="conteudo-pagina">
+					<p>Utilize o buscador abaixo para saber o horário e os dias que o professor está disponível na Fatec. Digite o nome desejado:</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- TABELA DE PESQUISA -->
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="well">
+					<div class="input-group">
+						<input type="text" class="form-control" name="buscar-professor" id="buscar-professor" placeholder="Digite o nome do professor">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+							</span>
+					</div>
+					<div class="panel-group" id="lista-ache-professor" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingProfessor1">
+								<h5 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#lista-ache-professor" href="#collapseProfessor1" id="button-professor1" aria-expanded="false" aria-controls="collapseProfessor1"><i class="glyphicon glyphicon-chevron-down"></i> Professor 1</a>
+								</h5>
+							</div>
+							<div id="collapseProfessor1" class="panel-collapse collapsing" role="tabpanel" aria-labelledby="headingProfessor1" id="conteudo-professor1">
+								<div class="panel-body conteudo-pagina">
+									<p>Segunda-feira - manhã</p>
+									<p>Terça-feira - tarde</p>
+									<p>Quarta-feira - noite</p>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingProfessor2">
+								<h5 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#lista-ache-professor" href="#collapseProfessor2" id="professor2" aria-expanded="false" aria-controls="collapseProfessor2"><i class="glyphicon glyphicon-chevron-down"></i> Professor 2</a>
+								</h5>
+							</div>
+							<div id="collapseProfessor2" class="panel-collapse collapsing" role="tabpanel" aria-labelledby="headingProfessor2" id="conteudo-professor2">
+								<div class="panel-body conteudo-pagina">
+									<p>Segunda-feira - manhã</p>
+									<p>Terça-feira - tarde</p>
+									<p>Quarta-feira - noite</p>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingProfessor3">
+								<h5 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#lista-ache-professor" href="#collapseProfessor3" id="professor2" aria-expanded="false" aria-controls="collapseProfessor3"><i class="glyphicon glyphicon-chevron-down"></i> Professor 3</a>
+								</h5>
+							</div>
+							<div id="collapseProfessor3" class="panel-collapse collapsing" role="tabpanel" aria-labelledby="headingProfessor3" id="conteudo-professor3">
+								<div class="panel-body conteudo-pagina">
+									<p>Segunda-feira - manhã</p>
+									<p>Terça-feira - tarde</p>
+									<p>Quarta-feira - noite</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<nav aria-label="page navigation">
+						 	<ul class="pagination page-prof">
+						 		<li>
+						 			<a href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+						     		</a>
+						    	</li>
+						    		<li><a href="#">1</a></li>
+								    <li><a href="#">2</a></li>
+								    <li><a href="#">3</a></li>
+								    <li><a href="#">4</a></li>
+								    <li><a href="#">5</a></li>
+						    	<li>
+						      		<a href="#" aria-label="Next">
+						       			<span aria-hidden="true">&raquo;</span>
+						      		</a>
+						    	</li>
+						  	</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</section>
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/navbar-animation-fix.js"></script>	
+
+</body>
+</html>
