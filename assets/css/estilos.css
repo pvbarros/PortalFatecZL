@@ -33,6 +33,10 @@ header h1 {
 	left: 27px;
 }
 
+.design-busca{
+	padding-top: 23px;
+}
+
 textarea{
 	resize: vertical;
 }
@@ -118,7 +122,7 @@ textarea{
 /*-------------------------*/
 
 
-/* SUB ACHE O PROF */
+/* ---SUB ACHE O PROF---- */
 i.glyphicon-chevron-down{
 	font-size: 0.8em;
 }
@@ -160,6 +164,13 @@ i.glyphicon-chevron-down{
 /*-------------------------*/
 
 
+/* ---SUB CORPO DOCENTE--- */
+.icon-lattes{
+	max-width: 30px;
+	max-height: 30px;
+}
+/*-------------------------*/
+
 footer {
 	background-color: #333;
 	color: #FFF;
@@ -170,5 +181,3 @@ footer {
 footer address:last-child {
 	margin-bottom: 0;
 }
-
-
