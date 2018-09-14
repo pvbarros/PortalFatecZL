@@ -45,7 +45,7 @@ textarea{
 
 
 /* -------NAVBAR------- */
-/*.b-navheader{
+.b-navheader{
 	display: inline;
 	width: 100%;
 	height: 100%;
@@ -60,9 +60,10 @@ textarea{
 	width: 100%;
 }
 
-.b-logo{
+.b-navcollapse{
+	background-color: #F8F8FF;
 	height: 100%;
-	margin-left: 40px; 
+	padding: 20px 0;
 }
 
 .b-menu{
@@ -74,7 +75,18 @@ textarea{
 	text-transform: uppercase;
 }
 
-.b-header{
+
+
+
+
+.b-logo{
+	height: 100%;
+	margin-left: 40px;
+}
+
+
+
+/*.b-header{
 	display: inline;
 	background-color: #F8F8FF;
 	width: 100%;
@@ -94,12 +106,7 @@ textarea{
 
 
 
-.b-navcollapse{
-	background-color: #F8F8FF;
-	height: 100%;
-	padding: 20px 0;
-	text-align: center;
-}
+
 
 .b-navbarmenu{
 	text-align: right;
