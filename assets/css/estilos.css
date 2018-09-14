@@ -1,6 +1,7 @@
 html,
 body {
 	height: 100%;
+	padding-top: 100px;
 }
 
 header h1 {
@@ -44,70 +45,77 @@ textarea{
 
 
 /* -------NAVBAR------- */
-.config-contaner{
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 30px;
-	padding-right: 30px;
-	width: 100%;
-}
-
-.config-header{
+/*.b-navheader{
 	display: inline;
 	width: 100%;
-	border-bottom: 6px solid #8B0000;
-	position: fixed;
+	height: 100%;
+	border-bottom: 5px solid #800000;
 	z-index: 99999;
 }
 
-.navbar-header{
-	height: 100px;
-}
-
-.navbar-brand{
-	padding: 15px 15px 15px 15px;
-}
-
-.navbar-nav{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	float: right;
-}
-
-/*.navbar-brand > img {
-	width: auto;
-	height: 100%;
-	padding: 0 15px 0 0;
-	width: auto;
-	display: inline-block;
-}
-
-.config-menu{
-	color: #8B0000;
-	font-weight: bold;
-}
-
-.logo{
-	max-width: 140px;
-	max-height: 80px;
-}
-
-/*.navbar-brand{
+.b-container{
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: #F8F8FF;
 	width: 100%;
-	height: 100%
-	font-size: 36px;
-	font-weight: 600;
 }
 
-.icon-bar{
-	background: #8B0000;
+.b-logo{
+	height: 100%;
+	margin-left: 40px; 
 }
 
-.dropdown-menu{
+.b-menu{
+	color: #696969;
+	font-weight: bolder;
+	padding: auto;
+	width: 100%;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.b-header{
+	display: inline;
+	background-color: #F8F8FF;
+	width: 100%;
+}
+
+
+
+
+
+.navbar-toggle{
+	margin-top: 40px;
+}
+
+.sr-only, icon-bar{
+	color: #8B0000;
+}
+
+
+
+.b-navcollapse{
+	background-color: #F8F8FF;
+	height: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.b-navbarmenu{
+	text-align: right;
+	width: 100%;
+}
+
+
+
+/*.dropdown-menu{
 	font-weight: bold;
 	font-size: 13px;
 	opacity: 1;
 	margin: 10px 8px 10px;
+}
+.icon-bar{
+	background: #8B0000;
 }
 /*----------------------*/
 
