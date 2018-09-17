@@ -45,7 +45,10 @@
 					<form id="form-ficha-catalog" data-toggle="validator" role="form" method="post" action="mail_ficha.js">
 						<div class="form-group">
 							<label for="EmailAluno">E-mail do aluno:</label>
-							<input type="email" class="form-control" name="email-aluno" id="email-aluno" size="40" placeholder="Digite um e-mail válido" aria-required="true" tabindex="1" required>
+							<div class="input-group">
+								<div class="input-group-addon">@</div>
+				      				<input type="email" class="form-control" name="email-aluno" id="email-aluno" size="40" placeholder="Digite um e-mail válido" aria-required="true" tabindex="1" required>
+			      			</div>
 						</div>
 						<div class="form-group">
 							<label for="NomeAutor1">Nome do autor 1:</label>
@@ -74,13 +77,13 @@
 						<div class="form-group">
 							<label for="Curso">Curso:</label>
 							<select class="form-control" id="selecionar-curso" tabindex="8" aria-required="true" required>
-								<option selected disabled="true"></option>
-								<option>Análise e Desenvolvimento de Sistemas</option>
-								<option>Comércio Exterior</option>
-								<option>Gestão Empresarial</option>
-								<option>Gestão Empresarial EAD</option>
-								<option>Logística</option>
-								<option>Polímeros</option>
+								<option value="" selected disabled>Selecione seu curso</option>
+								<option value="ads">Análise e Desenvolvimento de Sistemas</option>
+								<option value="comex">Comércio Exterior</option>
+								<option value="gestao">Gestão Empresarial</option>
+								<option value="gestaoEAD">Gestão Empresarial EAD</option>
+								<option value="logistica">Logística</option>
+								<option value="polimeros">Polímeros</option>
 								<div class="help-block with-errors"></div>
 							</select>
 						</div>

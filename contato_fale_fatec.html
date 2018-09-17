@@ -53,37 +53,40 @@
 						</div>
 						<div class="form-group">
 							<label for="Email">E-mail:</label>
-							<input type="email" class="form-control" name="email-fale-contato" id="email-fale-contato" placeholder="Digite seu e-mail" tabindex="3" aria-required="true" required>
+							<div class="input-group">
+								<div class="input-group-addon">@</div>
+				      				<input type="email" class="form-control" name="email-fale-contato" id="email-fale-contato" placeholder="Digite seu e-mail" tabindex="3" aria-required="true" required>
+			      			</div>
 						</div>
 						<div class="form-group">
 							<label for="Curso">Curso:</label>
 							<select class="form-control" id="curso-fale-contato" tabindex="4">
-								<option selected disabled="true"></option>
-								<option>Análise e Desenvolvimento de Sistemas</option>
-								<option>Comércio Exterior</option>
-								<option>Gestão Empresarial</option>
-								<option>Gestão Empresarial EAD</option>
-								<option>Logística</option>
-								<option>Polímeros</option>
+								<option value="" selected disabled>Selecione seu curso</option>
+								<option value="ads">Análise e Desenvolvimento de Sistemas</option>
+								<option value="comex">Comércio Exterior</option>
+								<option value="gestao">Gestão Empresarial</option>
+								<option value="gestaoEAD">Gestão Empresarial EAD</option>
+								<option value="logistica">Logística</option>
+								<option value="polimeros">Polímeros</option>
 							</select>
 						</div>
 						<div class="form-group">
 							<label for="Periodo">Período:</label>
 							<select class="form-control" id="periodo-fale-contato" data-validation-required-message="Campo obrigatório" tabindex="5" aria-required="true" required>
-								<option selected disabled="true"></option>
-								<option>Manhã</option>
-								<option>Tarde</option>
-								<option>Noite</option>
+								<option value="" selected disabled>Selecione o período</option>
+								<option value="manha">Manhã</option>
+								<option value="tarde">Tarde</option>
+								<option value="noite">Noite</option>
 							</select>
 						</div>
 						<div class="form-group">
 							<label for="Assunto">Assunto:</label>
 							<select class="form-control" id="assunto-fale-contato" onchange="escondediv(oculta, assunto);" tabindex="6" aria-required="true" required>
-								<option selected disabled="true"></option>
-								<option>Sugestão</option>
-								<option>Reclamação</option>
-								<option>Elogio</option>
-								<option>Outros</option>
+								<option value="" selected disabled>Qual o assunto?</option>
+								<option value="sugestao">Sugestão</option>
+								<option value="reclamacao">Reclamação</option>
+								<option value="elogio">Elogio</option>
+								<option value="outros">Outros</option>
 							</select>
 						</div>
 						<div class="form-group">
@@ -95,15 +98,16 @@
 						<div class="form-group">
 							<label for="Area">Área:</label>
 							<select class="form-control" id="area-fale-contato" tabindex="7" aria-required="true" required>
-								<option selected disabled="true"></option>
-								<option>Coordenação</option>
-								<option>Direção</option>
-								<option>DTI</option>
-								<option>Diretoria de Serviços</option>
-								<option>Estágio</option>
-								<option>Laboratório</option>
-								<option>Limpeza</option>
-								<option>Outros</option>
+								<option value="" selected disabled>Seleciona a área</option>
+								<option value="coord">Coordenação</option>
+								<option value="secretaria">Secretaria</option>
+								<option value="direcao">Direção</option>
+								<option value="dti">DTI</option>
+								<option value="diretoria-servicos">Diretoria de Serviços</option>
+								<option value="estagio">Estágio</option>
+								<option value="lab">Laboratório</option>
+								<option value="limpeza">Limpeza</option>
+								<option value="outros">Outros</option>
 							</select>
 						</div>
 						<div class="form-group">
