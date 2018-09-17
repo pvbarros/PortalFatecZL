@@ -11,25 +11,25 @@
 </head>
 <body>
 		
+	<!-- CABEÇALHO -->	
 	<header class="b-header" id="top">
-
-			<nav class="navbar navbar-inner navbar-fixed-top b-nav">
+			<nav class="navbar navbar-inner">
 				<div class="container b-container">
 					
-				<div class="navbar-header b-navheader">
+				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand b-logo" href="#">
-						<img class="img-responsive" src="">
+					<a class="navbar-left b-logo" href="#">
+						<img class="img-responsive" src="assets/img/FATEC-zl-logo.png">
 					</a>
 				</div>
 
 				<div class="collapse navbar-collapse b-navcollapse" id="collapse-navbar">
-					<ul class="nav navbar-nav center-block b-navbarmenu">
+					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle b-menu" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Institucional <span class="caret"></span></a>
          					<ul class="dropdown-menu">
@@ -68,7 +68,7 @@
             				<a href="#" class="dropdown-toggle b-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Biblioteca <span class="caret"></span></a>
             				<ul class="dropdown-menu">
             					<li><a href="biblioteca_infos.html">Informações</a></li>
-            					<li><a href="http://fateczl.edu.br/openbiblio/opac/index.php" target="_blank">Buscar Livro</a></li>
+            					<li><a href="http://fateczl.edu.br/openbiblio/opac/index.php" target="_blank">Consultar Acervo</a></li>
             				</ul>
             			</li>
             			<li class="dropdown">
@@ -116,83 +116,97 @@
 		</nav>
 	</header>
 
-	<section id="depoimentos" class="depoimentos1" >
+	<!-- SEÇÃO DESTAQUES -->
+	<section id="destaques" class="destaques">
 
-		<div class="top-content">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 text">
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<div id="carrossel-destaques" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				<li data-target="#carrossel-destaques" data-slide-to="0" class="active"></li>
+				<li data-target="#carrossel-destaques" data-slide-to="1"></li>
+				<li data-target="#carrossel-destaques" data-slide-to="2"></li>
+				<li data-target="#carrossel-destaques" data-slide-to="3"></li>
 			</ol>
 
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<figure class="item active">
-					<img src="assets/img//destaques/projetos0.png" alt="Depoimento 1">
+					<img class="img-des" src="assets/img/FATEC_ZONA_LESTE.png" alt="Depoimento 1">
 					<figcaption class="carousel-caption">
-						<h3>Yuri Padilha</h3>
-						<p>Gostei muito e achei rápido o serviço.</p>
+						<h3 class="titulo-destaques">Yuri Padilha</h3>
+						<p class="conteudo-destaques">Gostei muito e achei rápido o serviço.</p>
 					</figcaption>
 				</figure>
 				<figure class="item">
 					<img src="assets/img/destaques/projetos1.png" alt="Depoimento 2">
 					<figcaption class="carousel-caption">
-						<h3>Fernando Stafaneni</h3>
-						<p>Excelente trabalho.</p>
+						<h3 class="titulo-destaques">Fernando Stafaneni</h3>
+						<p class="conteudo-destaques">Excelente trabalho.</p>
 					</figcaption>
 				</figure>
 				<figure class="item">
 					<img src="assets/img/destaques/projetos2.png" alt="Depoimento 3">
 					<figcaption class="carousel-caption">
-						<h3>Caio Sauzas</h3>
-						<p>Gostei, competência em primeiro lugar.</p>
+						<h3 class="titulo-destaques">Caio Sauzas</h3>
+						<p class="conteudo-destaques">Gostei, competência em primeiro lugar.</p>
+					</figcaption>
+				</figure>
+				<figure class="item">
+					<img src="assets/img/destaques/projetos2.png" alt="Depoimento 3">
+					<figcaption class="carousel-caption">
+						<h3 class="titulo-destaques">Caio Sauzas</h3>
+						<p class="conteudo-destaques">Gostei, competência em primeiro lugar.</p>
 					</figcaption>
 				</figure>
 			</div>
 
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<a class="left carousel-control" href="#carrossel-destaques" role="button" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<a class="right carousel-control" href="#carrossel-destaques" role="button" data-slide="next">
 				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
 		</div>
-		</div>
-	</div>
-</div>
 	</section>
 
+	<!-- SEÇÃO NOTICIAS / AVISOS -->
 	<section id="nossos-projetos" class="container">
-		<h2>Noticias/Destaque</h2>
+		<h2>Últimas Notícias</h2>
+		<hr>
 
-		<div class="row">
-			<div class="col-sm-6 col-md-4 col-lg-3">
+		<div class="row" data-toggle="validator">
+			<div class="col-sm-6 col-md-4">
 				<figure class="thumbnail">
-					<img src="assets/img/projetos/vestibular 2018-2.png" alt="">
+					<a class="link-noticia" href="#">
+						<img class="img-responsive img-rounded img-hover" src="assets/img/noticias/vestibular 2018-2.png" alt="Notícias">
+					</a>
 					<figcaption class="caption">
-						<h3>Vestibular</h3>
-						<p>
-							Não perca a oportunidade de ingressar na Fatec
+						<p class="horario-noticias"><i class="glyphicon glyphicon-time horario-post"></i> Postado em 23 de agosto, 2018 às 14:00</p>
+						<h3 class="titulo-noticias" size="32">
+							<a class="link-noticia" href="#">Vestibular</a>
+						</h3>
+						<p class="conteudo-noticias">
+							Não perca a oportunidade de ingressar na Fatec ijdsjidsjfidjfdi djfkmkcsad ijdifdsfdjf kdksaodkaso ddnfdfjdifjdi d fdksopkdsa difjdisfj 
 						</p>
 						<button type="button" class="btn btn-primary">Ver mais</button>
 					</figcaption>
 				</figure>
 			</div>
 
-			<div class="col-sm-6 col-md-4 col-lg-3">
+			<div class="col-sm-6 col-md-4">
 				<figure class="thumbnail">
-					<img src="assets/img/projetos/resultadotransferencia2018-2.png" alt="">
+					<a class="link-noticia" href="#">
+						<img class="img-responsive img-rounded img-hover" src="assets/img/noticias/empresa.jpg" alt="Notícias">
+					</a>
 					<figcaption class="caption">
-						<h3>Processo de Trasnferencia 2018-2</h3>
-						<p>
+						<p class="horario-noticias"><i class="glyphicon glyphicon-time horario-post"></i> Postado em 23 de agosto, 2018 às 14:00</p>
+						<h3 class="titulo-noticias" size="32">
+							<a class="link-noticia" href="#">Processo de Transferencia 2018-2</a>
+						</h3>
+						<p class="conteudo-noticias">
 							Veja se você conseguiu.
 						</p>
 						<button type="button" class="btn btn-primary">Ver mais</button>
@@ -200,103 +214,167 @@
 				</figure>
 			</div>
 
-			<div class="col-sm-6 col-md-4 col-lg-3">
+			<div class="col-sm-6 col-md-4">
 				<figure class="thumbnail">
-					<img src="assets/img/projetos/mercado-marapira.png" alt="">
+					<a class="link-noticia" href="#">
+						<img class="img-responsive img-rounded img-hover" src="assets/img/projetos/mercado-marapira.png" alt="Notícias">
+					</a>
 					<figcaption class="caption">
-						<h3>Casa Castelo</h3>
-						<p>
-							O mercado Marapira foi projetado nos mínimos detalhes na arquitetura baseada em frutas.
+						<p class="horario-noticias"><i class="glyphicon glyphicon-time horario-post"></i> Postado em 23 de agosto, 2018 às 14:00</p>
+						<h3 class="titulo-noticias" size="32">
+							<a class="link-noticia" href="#">Casa Castelo</a>
+						</h3>
+						<p class="conteudo-noticias">
+							O mercado Marapira foi projetado nos mínimos detalhes na arquitetura baseada em frutas. disjdisajdioasjdisajdisjdijsad sdiosjdisadj asdisajd sidjsi dsaijdsa disjad siadjsa dsai dsiad sajid sadis dsiadja s
 						</p>
+						<button type="button" class="btn btn-primary">Ver mais</button>
 					</figcaption>
 				</figure>
 			</div>
 
-			<div class="col-sm-6 col-md-4 col-lg-3">
+			<div class="col-sm-6 col-md-4">
 				<figure class="thumbnail">
-					<img src="assets/img/projetos/palacio-dionisio.png" alt="">
+					<a class="link-noticia" href="#">
+						<img class="img-responsive img-rounded img-hover" src="assets/img/projetos/palacio-dionisio.png" alt="">
+					</a>
 					<figcaption class="caption">
-						<h3>Palácio Dionísio</h3>
-						<p>
-							O palácio Dionísio foi eleito pela revista 'Grandes palácios' como o palácio mais lindo do mundo.
+						<p class="horario-noticias"><i class="glyphicon glyphicon-time horario-post"></i> Postado em 23 de agosto, 2018 às 14:00</p>
+						<h3 class="titulo-noticias" size="32">
+							<a class="link-noticia" href="#">Palácio Dionísio</a>
+						</h3>
+						<p class="conteudo-noticias">
+							O palácio Dionísio foi eleito pela revista 'Grandes palácios' como o palácio mais lindo do mundo. dsoadjsaidjisadjsa dsaidjsaidjsdisjd saidojsaidjsaidjsa dsaioodjsaiodjsdis adisadjsaidjsaid saoidjs adjisadisja disaodj sa
 						</p>
+						<button type="button" class="btn btn-primary">Ver mais</button>
 					</figcaption>
 				</figure>
 			</div>
 
-			<div class="col-sm-6 col-md-4 col-lg-3">
+			<div class="col-sm-6 col-md-4">
 				<figure class="thumbnail">
-					<img src="assets/img/projetos/residencia-ludi.png" alt="">
+					<a class="link-noticia" href="#">
+						<img class="img-responsive img-rounded img-hover" src="assets/img/projetos/residencia-ludi.png" alt="">
+					</a>
 					<figcaption class="caption">
-						<h3>Residência Ludi</h3>
-						<p>
-							A residência Ludi foi projetada para ser a mais bela casa de São Paulo pela revista Housing.
+						<p class="horario-noticias"><i class="glyphicon glyphicon-time horario-post"></i> Postado em 23 de agosto, 2018 às 14:00</p>
+						<h3 class="titulo-noticias" size="32">
+							<a class="link-noticia" href="#">Residência Ludi</a>
+						</h3>
+						<p class="conteudo-noticias">
+							A residência Ludi foi projetada para ser a mais bela casa de São Paulo pela revista Housing. asdisjdisjadoijs dsijajdiasdjsaid isjdsa dsjadi sadiosajdoisajdsjadiosajd sadisjdiosadj 
 						</p>
+						<button type="button" class="btn btn-primary">Ver mais</button>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-sm-6 col-md-4">
+				<figure class="thumbnail">
+					<a class="link-noticia" href="#">
+						<img class="img-responsive img-rounded img-hover" src="assets/img/projetos/residencia-ludi.png" alt="">
+					</a>
+					<figcaption class="caption">
+						<p class="horario-noticias"><i class="glyphicon glyphicon-time horario-post"></i> Postado em 23 de agosto, 2018 às 14:00</p>
+						<h3 class="titulo-noticias" size="32">
+							<a class="link-noticia" href="#">Residência Ludi</a>
+						</h3>
+						<p class="conteudo-noticias">
+							A residência Ludi foi projetada para ser a mais bela casa de São Paulo pela revista Housing. sauhdasuidhsuadhs saidjsaidjisjd sijsidjsiojdsaidj
+						</p>
+						<button type="button" class="btn btn-primary">Ver mais</button>
 					</figcaption>
 				</figure>
 			</div>
 		</div>
+		<hr>
 	</section>
-	<!--<a href="#top" class="back-to-top"> Back to top </a>-->
+	<!--<a href="#top" class="back-to-top"> Back to top </a>
+	<button id="top" style="background-color: rgb(140, 140, 140); transform: translateX(0px); opacity: 0.8;"><img src="/top.svg" alt="^"></button>
+<img src="/top.svg" alt="^">-->
 
-	<!--<div class="container">
+	<!-- SEÇÃO INSTITUCIONAL E CONTATO -->
+	<div class="container">
 		<div class="row">
-			<section id="video" class="col-sm-6">
 
-				<h2>Video institucional</h2>
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/i_3Pv1AygeI" frameborder="0" allowfullscreen></iframe>
+			<!-- SEÇÃO VIDEO INSTITUCIONAL -->
+			<section id="video" class="col-sm-6">
+				<h2>Video Institucional</h2>
+				<div class="embed-responsive embed-responsive-4by3">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/IPJa2paeN2c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 			</section>
 
+			<!-- SEÇÃO ENTRE EM CONTATO -->
 			<section id="contato" class="col-sm-6">
 				<h2>Contato</h2>
-				<h4>Entre em contato conosco</h4>
+				<h4>Saiba onde nos encontrar</h4>
 
-				<form>
+				<!--ENDEREÇO -->
+				<p><i class="glyphicon glyphicon-map-marker"></i>
+                	<abbr title="Endereço">E</abbr>: Avenida Águia de Haia, 2983, Cidade A.E Carvalho
+                </p>
+
+                <!-- TELEFONES -->
+                <p><i class="glyphicon glyphicon-earphone"></i> 
+                    <abbr title="Telefone 1">T</abbr>: (11) 2049-2600</p>
+
+                <p><i class="glyphicon glyphicon-earphone"></i>
+                	<abbr title="Telefone 2">T</abbr>:  (11) 2026-0378</p>
+
+                <p><i class="glyphicon glyphicon-earphone"></i>
+                	<abbr title="Telefone 3">T</abbr>:  (11) 2026-1303</p>
+
+                <p><i class="glyphicon glyphicon-earphone"></i>
+                	<abbr title="Telefone 4">T</abbr>:  (11) 2041-2187</p>
+                
+                <!-- REDES SOCIAIS -->
+                <ul class="list-unstyled list-inline list-social-icons">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    </li>
+                </ul>
+				<!--<form>
 					<div class="form-group">
 						<label for="contato-nome">Nome:</label>
-						<input id="contato-nome" class="form-control" type="text" placeholder="Seu nome">
+						<input id="contato-nome" class="form-control" type="text" placeholder="Seu nome" tabindex="1">
 					</div>
 
 					<div class="form-group">
 						<label for="contato-email">E-mail:</label>
 						<div class="input-group">
 							<div class="input-group-addon">@</div>
-			      	<input id="contato-email" class="form-control" type="email" placeholder="Seu e-mail">
-		      	</div>
+				      			<input id="contato-email" class="form-control" type="email" placeholder="Seu e-mail" tabindex="2">
+			      		</div>
 					</div>
 
-					<div class="grupo-radio">
-						<div class="radio">
-							<label>
-								<input type="radio" name="tipo-pessoa" value="fisica" checked>
-								Pessoa física
-							</label>
-						</div>
-
-						<div class="radio">
-							<label>
-								<input type="radio" name="tipo-pessoa" value="juridica">
-								Pessoa jurídica
-							</label>
-						</div>
-					</div>
-
-					<select class="contato-select form-control" name="tipo-solicitacao">
+					<select class="contato-select form-control" name="tipo-solicitacao" tabindex="3">
 						<option value="" disabled selected>Tipo de solicitação</option>
-					  <option value="casa">Casa</option>
-					  <option value="apartamento">Apartamento</option>
-					  <option value="mansao">Mansão</option>
+						<option value="casa">Casa</option>
+						<option value="apartamento">Apartamento</option>
+						<option value="mansao">Mansão</option>
 					</select>
 
-					<button type="submit" class="btn btn-primary">Enviar</button>
-
-				</form>
+					<div class="form-group">
+						<label for="Mensagem">Qual sua dúvida?</label>
+						<textarea class="form-control" name="msg-fale-contato" id="msg-fale-contato" rols="5" cols="20" tabindex="8" aria-required="true" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary" name="enviar" tabindex="9">Enviar</button>
+					<button type="reset" class="btn btn-primary" name="limpar" tabindex="10">Limpar</button>
+				</form>-->
 			</section>
 		</div>
 	</div>
 
+	<!-- FOOTER -->
 	<footer>
 		<address>
 			<strong>TopCasaFina Arquitetura</strong><br>
@@ -307,8 +385,9 @@
 		<address>
 			E-mail: contato.topcasafina@alura.com.br
 		</address>
-	</footer>-->
+	</footer>
 
+	<script src="js/validator.min.js"></script>
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/navbar-animation-fix.js"></script>
