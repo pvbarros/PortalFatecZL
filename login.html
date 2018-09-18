@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>Faculdade de Tecnologia da Zona Leste</title>
+</head>
+<body>
+
+	<!-- LOGIN -->
+	<section class="container full-screen">
+		
+		<div class="row">
+
+			<div class="content">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+					   		<h3 class="panel-title titulo-uppercase"><strong>Fazer login</strong></h3>
+						</div>
+						<div class="panel-body">
+						    <form id="form-login" data-toggle="validator" method="post" action="login.js">
+						    	<div class="form-group">
+						    		<div class="input-group">
+										<div class="input-group-addon">
+											<i class="glyphicon glyphicon-user"></i>
+										</div>
+						      				<input type="email" class="form-control" name="login-usuario" id="login-usuario" size="40" placeholder="Usuário" aria-required="true" tabindex="1" required>
+					      			</div>
+						    	</div>
+						    	<div class="form-group">
+						    		<div class="input-group">
+										<div class="input-group-addon">
+											<i class="glyphicon glyphicon-lock"></i>
+										</div>
+						      				<input type="password" class="form-control" name="login-senha" id="login-senha" size="40" placeholder="Senha" aria-required="true" tabindex="1" required>
+					      			</div>
+						    	</div>
+						    	<div class="checkbox">
+						    		<label>
+						    			<input name="remember" type="checkbox" value="Lembrar minhas credenciais">Lembrar minhas credenciais
+						    		</label>
+						    	</div>	
+						    	<input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
+						    </form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+		</div>
+	</section>
+
+
+	<script src="js/validator.min.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/navbar-animation-fix.js"></script>
+</body>
+</html>
