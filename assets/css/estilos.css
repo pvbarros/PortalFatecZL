@@ -54,10 +54,37 @@ textarea{
 	width: 100%;
 	direction: ltr;
 }
+
+.titulo-uppercase{
+	text-transform: uppercase;
+}
 /*------------------------*/
 
 
 /* -------NAVBAR------- */
+.login{
+	padding-top: 8px;
+	margin-left: 20px;
+	text-align: right;
+	padding-bottom: 8px;
+}
+
+.social-nav{
+	float: left!important;
+	padding-top: 10px;
+}
+
+.icon-nav{
+	height: 25px;
+	width: 25px;
+}
+
+.area-login{
+	border-bottom: 1px solid #eee;
+	box-sizing: border-box;
+	background-color: #fffff0;
+}
+
 .b-container{
 	padding-left: 30px;
 	padding-right: 15px;
@@ -155,15 +182,28 @@ footer address:last-child {
 	margin-bottom: 0;
 }
 
-.titulo-rodape{
-	text-transform: uppercase;
-}
-
 .conteudo-rodape{
 	text-align: center;
 	width: 100%;
 }
+
+.logo-rodape{
+	width: 100%;
+}
 /*----------------------*/
+
+
+/* -----TELA LOGIN----- */
+.content{
+	background: transparent;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%; 
+}
+/*----------------------*/
+
 
 /* ------MENU CURSOS----- */
 .img-cursos{
@@ -269,3 +309,16 @@ i.glyphicon-chevron-down{
 }
 /*-------------------------*/
 
+
+/* GERENCIADOR NOTICIAS */
+.titulo-gerenciador {
+	background-color: #0275D8;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #FFF;
+	margin-bottom: 0;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+}
+/*----------------------*/

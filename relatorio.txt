@@ -30,4 +30,7 @@ MENU CONTATO
 
 - Desenvolvido sub menu "Fale com a Fatec".  Nas respostas colhidas do "questionário para os alunos", não houveram respostas que citassem sobre esse sub menu. Não mexemos em sua estrutura atual, nem nas validações já existentes no form. Houve mudança apenas no design do site.
 
-https://codepen.io/ajaypatelaj/pen/prHjD
+Links úteis: 
+- TextArea c/ edição de texto: https://www.satellasoft.com/?materia=transformando-textarea-em-um-editor-de-texto-com-ckeditor
+- Multi level menu: https://codepen.io/ajaypatelaj/pen/prHjD
+- Tela login: https://bootstrapmade.com/demo/Flexor/
