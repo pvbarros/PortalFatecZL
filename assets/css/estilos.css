@@ -144,7 +144,7 @@ textarea{
 	box-shadow: -13px 14px 26px 0px rgba(230,230,230,0.76);
 }
 
-.titulo-noticias{
+#titulo-noticias{
 	line-height: 1.5;
 	font-size: 15.5px;
 	font-weight: bolder;

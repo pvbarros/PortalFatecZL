@@ -34,3 +34,8 @@ Links úteis:
 - TextArea c/ edição de texto: https://www.satellasoft.com/?materia=transformando-textarea-em-um-editor-de-texto-com-ckeditor
 - Multi level menu: https://codepen.io/ajaypatelaj/pen/prHjD
 - Tela login: https://bootstrapmade.com/demo/Flexor/
+- Validator: https://webdevacademy.com.br/tutoriais/validacao-formularios-bootstrap-validator/
+- Carrossel: 
+	https://gist.github.com/thassiov/25debc54fa5aef55fb20798726f9ac20
+	https://forum.imasters.com.br/topic/563015-corrigir-largura-de-imagem-no-bootstrap-carousel/
+	https://pt.stackoverflow.com/questions/266368/inserir-t%C3%ADtulos-dos-itens-na-lateral-carousel-bootstrap
