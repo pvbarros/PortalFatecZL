@@ -24,16 +24,24 @@
 
 	<section class="container">
 
-		<h2 class="container titulo-gerenciador">Gerenciador de Notícias</h2>
+		<h2 class="container titulo-gerenciador">Gerenciador de Destaques</h2>
 
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<div class="well">
-					<div class="row">
-						<div class="col-md-3">
-							sssssssss
+					<form id="form-gerenciador-destaques" data-toggle="validator" method="post" action="gerenciadorDestaques.js">
+						<div class="form-group">
+							<input type="image" name="inputImagemDestaques" class="form-control">
 						</div>
-					</div>
+						<div class="form-group">
+							<label for="tituloDestaques">Título:</label>
+							<input type="text" name="inputTituloDestaques" class="form-control" placeholder="Digite o título do destaque">
+						</div>
+						<div class="form-group">
+							<label for="subTituloDestaques">Subtítulo:</label>
+							<input type="text" name="inputSubtituloDestaques" class="form-control" placeholder="Digite o subtítulo do destaque">
+						</div>					
+					</form>
 				</div>
 			</div>
 		</div>
