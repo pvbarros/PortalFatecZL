@@ -128,6 +128,45 @@ textarea{
 /*----------------------*/
 
 
+/* SEÇÃO CARROSSEL */
+.fixedHeightImg > img {
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+ }
+
+ .patternImage{
+ 	height: 500px;
+ }
+
+.carousel-control.right,
+.carousel-control.left{
+ 	background-image: none!important; 
+}
+
+.glyphicon.glyphicon-chevron-left,
+.glyphicon.glyphicon-chevron-right{
+  color: #8B0000;
+}
+
+.titulo-destaques,
+.conteudo-destaques{
+	color: #fff;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+    background-color: #000;
+    opacity: .2;
+    transition: all 0.2s ease-out;
+}
+/*----------------------*/
+
+
 /* ---SEÇÃO NOTICIAS--- */
 .thumbnail a>img{
 	min-width: 100%;
