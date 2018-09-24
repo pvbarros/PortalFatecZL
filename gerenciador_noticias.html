@@ -20,64 +20,69 @@
 	<section class="container">
 
 		<h2 class="container titulo-gerenciador">Gerenciador de Notícias</h2>
-		<!--Inicio div imagem e form group -->
+
+		<!-- FORM GERENCIADOR DE NOTICIAS -->
 		<div class="row"> 			
 			<div class="col-md-8 col-md-offset-2">
 				<div class="well">
-					<form>
+					<form id="form-gerenciador-noticias" data-toggle="validator" method="post" action="gerenciador_noticias.js">
+						<div class="form-group">
+							<label for="imagemNoticias">Imagem:</label>
+							<input type="file" name="inputImagemNoticias" class="form-control">
+						</div>
 						<div class="form-group">
 							<label>Título:</label>
-							<input type="text" class="form-control" placeholder="Digite o Título">
+							<input type="text" name="inputTituloNoticias" class="form-control" placeholder="Digite o título do post" maxlength="32" data-error="*Preencha o títutlo da notícia" maxlength="32" required>
+							<div class="help-block with-errors"></div>
 						</div>
-						<div class="form-group">
-							<label>Subtítulo:</label>
-							<input type="text" class="form-control" placeholder="Digite o Subtítulo">
-						</div>
+
+						<!-- REFAZER COM EDITOR DE TEXTO -->
 						<div class="form-group">
 							<label>Descricão:</label>
 							<input type="text" class="form-control" placeholder="Digite a Descricão">
 						</div>
-						<div class="form-group">
-							<label>Link:</label>
-							<input type="text" class="form-control" placeholder="Digite o Link">
-						</div>
-						<div>
-							<button type="reset" class="btn btn-primary" name="novo">Novo</button>
-							<button type="reset" class="btn btn-secondary" name="alterar">Alterar</button>
-							<button type="reset" class="btn btn-warning" name="cancelar">Cancelar</button>
-							<button type="reset" class="btn btn-danger" name="excluir">Excluir</button>
-							<button type="submit" class="btn btn-success" name="salvar">Salvar</button>
-						</div>
+						<!-------------------------->
+
+						<div class="form-group crud-destaques">
+							<button type="submit" class="btn btn-success titulo-uppercase" name="salvar" formmethod="post">
+								<i class="glyphicon glyphicon-floppy-saved"></i> <strong>Salvar</strong></button>
+							<button type="submit" class="btn btn-danger titulo-uppercase" name="excluir" formmethod="post">
+								<i class="glyphicon glyphicon-floppy-remove"></i> <strong>Excluir</strong></button>
+							<button type="button" class="btn btn-primary titulo-uppercase" name="cancelar">
+								<i class="glyphicon glyphicon-ban-circle"></i> <strong>Cancelar</strong></button>
+						</div>	
 					</form>
+
+					<!--TABELA DE NOTICIAS ANTIGAS -->
+					<div class="lista-noticias" id="lista-noticias">
+						<ul class="list-group">
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-		<!--Inicio div tabela -->
-		<div>
-			<ul class="list-group">
-			  <li class="list-group-item">Cras justo odio</li>
-			  <li class="list-group-item">Dapibus ac facilisis in</li>
-			  <li class="list-group-item">Morbi leo risus</li>
-			  <li class="list-group-item">Porta ac consectetur ac</li>
-			  <li class="list-group-item">Vestibulum at eros</li>
-			  <li class="list-group-item">Cras justo odio</li>
-			  <li class="list-group-item">Dapibus ac facilisis in</li>
-			  <li class="list-group-item">Morbi leo risus</li>
-			  <li class="list-group-item">Porta ac consectetur ac</li>
-			  <li class="list-group-item">Vestibulum at eros</li>
-			  <li class="list-group-item">Cras justo odio</li>
-			  <li class="list-group-item">Dapibus ac facilisis in</li>
-			  <li class="list-group-item">Morbi leo risus</li>
-			  <li class="list-group-item">Porta ac consectetur ac</li>
-			  <li class="list-group-item">Vestibulum at eros</li>
-			</ul>
-		</div>
-
+		<hr>
 	</section>
 
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/js/navbar-animation-fix.js"></script>	
-
+	<script src="assets/js/validator.min.js"></script>
+	<script src="bootstrap-wysiwyg.js"></script>
+	<script src="assets/js/navbar-animation-fix.js"></script>
 </body>
 </html>

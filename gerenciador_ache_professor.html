@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>Faculdade de Tecnologia da Zona Leste</title>
+</head>
+<body>
+
+	<section class="container">
+
+		<h2 class="container titulo-gerenciador">Gerenciador Ache o Professor</h2>
+
+		<!-- FORM GERENCIADOR DE NOTICIAS -->
+		<div class="row"> 			
+			<div class="col-md-8 col-md-offset-2">
+				<div class="well">
+					<form id="form-gerenciador-noticias" data-toggle="validator" method="post" action="gerenciador_noticias.js">
+						<div class="form-group">
+							<label for="tituloAcheProfessor">Título:</label>
+							<input type="text" name="inputTituloAcheProfessor" class="form-control" placeholder="Digite o título da página" data-error="*Preencha o títutlo da página" maxlength="32" required>
+							<div class="help-block with-errors"></div>
+						</div>
+
+
+						<!-- REFAZER COM EDITOR DE TEXTO -->
+						<div class="form-group">
+							<label for="descAcheProfessor">Descrição:</label>
+							<input type="text" name="inputDescAcheProfessor" class="form-control" placeholder="Digite o conteúdo da página" data-error="*Preencha a descrição da página" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<!---------------------------------->
+
+
+						<!-- DIV ADICIONAR PROF ECONTATO -->
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="profAcheProfessor">Professor:</label>
+									<input type="text" name="inputProfAcheProfessor" class="form-control" placeholder="Digite o nome do professor">
+								</div>
+								<div class="form-group">
+									<label for="contatoAcheProfessor">E-mail:</label>
+									<input type="email" name="inputEmailAcheProfessor" class="form-control" placeholder="Digite o e-mail do professor">
+								</div>
+								<div class="form-group crud-ache-professor">
+									<button type="button" class="btn btn-success titulo-uppercase" name="salvar" formmethod="post">
+										<i class="glyphicon glyphicon-ok"></i> <strong>Adicionar</strong></button>
+								</div>
+							</div>
+
+							<!-- DIV ADICIONAR SEMANA E TURNO -->
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>
+							    		<input type="checkbox" name="inputSemanaAcheProfessor" value="segunda-feira"> Segunda-feira
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="manhã"> Manhã 
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="tarde"> Tarde
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="noite">  Noite
+							    	</label>
+						    	</div>
+						    	<div class="form-group">
+									<label>
+							    		<input type="checkbox" name="inputSemanaAcheProfessor" value="segunda-feira"> Terça-feira
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="manhã"> Manhã 
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="tarde"> Tarde
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="noite"> Noite
+							    	</label>
+						    	</div>
+						    	<div class="form-group">
+									<label>
+							    		<input type="checkbox" name="inputSemanaAcheProfessor" value="segunda-feira"> Quarta-feira
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="manhã"> Manhã 
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="tarde"> Tarde
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="noite"> Noite
+							    	</label>
+						    	</div>
+						    	<div class="form-group">
+									<label>
+							    		<input type="checkbox" name="inputSemanaAcheProfessor" value="segunda-feira"> Quinta-feira
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="manhã"> Manhã 
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="tarde"> Tarde
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="noite"> Noite
+							    	</label>
+						    	</div>
+						    	<div class="form-group">
+									<label>
+							    		<input type="checkbox" name="inputSemanaAcheProfessor" value="segunda-feira"> Sexta-feira
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="manhã"> Manhã 
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="tarde"> Tarde
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="noite"> Noite
+							    	</label>
+						    	</div>
+						    	<div class="form-group">
+									<label>
+							    		<input type="checkbox" name="inputSemanaAcheProfessor" value="segunda-feira"> Sábado
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="manhã"> Manhã 
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="tarde"> Tarde
+							    		<input type="checkbox" name="inputTurnoAcheProfesor" value="noite"> Noite
+							    	</label>
+						    	</div>
+							</div>
+						</div>
+
+						<!-- DIV LISTA ACHE O PROFESSOR -->
+						<div class="lista-ache-professor" id="lista-ache-professor">
+							<ul class="list-group" method="get" action="lista_ache_professor.js">
+							  <li class="list-group-item">Cras justo odio</li>
+							  <li class="list-group-item">Dapibus ac facilisis in</li>
+							  <li class="list-group-item">Morbi leo risus</li>
+							  <li class="list-group-item">Porta ac consectetur ac</li>
+							  <li class="list-group-item">Vestibulum at eros</li>
+							  <li class="list-group-item">Cras justo odio</li>
+							  <li class="list-group-item">Dapibus ac facilisis in</li>
+							  <li class="list-group-item">Morbi leo risus</li>
+							  <li class="list-group-item">Porta ac consectetur ac</li>
+							  <li class="list-group-item">Vestibulum at eros</li>
+							  <li class="list-group-item">Cras justo odio</li>
+							  <li class="list-group-item">Dapibus ac facilisis in</li>
+							  <li class="list-group-item">Morbi leo risus</li>
+							  <li class="list-group-item">Porta ac consectetur ac</li>
+							  <li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+						<div class="form-group crud-destaques">
+							<button type="submit" class="btn btn-success titulo-uppercase" name="salvar" formmethod="post">
+								<i class="glyphicon glyphicon-floppy-saved"></i> <strong>Salvar</strong></button>
+							<button type="submit" class="btn btn-danger titulo-uppercase" name="excluir" formmethod="post">
+								<i class="glyphicon glyphicon-floppy-remove"></i> <strong>Excluir</strong></button>
+							<button type="button" class="btn btn-primary titulo-uppercase" name="cancelar">
+								<i class="glyphicon glyphicon-ban-circle"></i> <strong>Cancelar</strong></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</section>
+
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/validator.min.js"></script>
+	<script src="bootstrap-wysiwyg.js"></script>
+	<script src="assets/js/navbar-animation-fix.js"></script>
+</body>
+</html>
