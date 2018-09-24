@@ -11,11 +11,6 @@
 </head>
 <body>
 
-<!-- CABEÇALHO -->
-	<header>
-
-	</header>
-
 	<!-- SEÇÃO CORPO FALE COM A FATEC -->
 	<section class="container" id="fale-fatec-contato">
 
@@ -42,21 +37,24 @@
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 				<div class="well">
-					<form id="form-fale-contato" role="form" method="post" action="mail.js" onsubmit="return validarOculta();">
+					<form id="form-fale-contato" role="form" data-toggle="validator" method="post" action="mail.js" onsubmit="return validarOculta();">
 						<div class="form-group">
 							<label for="Nome">Nome:</label>
-							<input type="text" class="form-control" name="nome-fale-contato" id="nome-fale-contato" placeholder="Digite seu nome" tabindex="1" aria-required="true" required>
+							<input type="text" class="form-control" name="nome-fale-contato" id="nome-fale-contato" placeholder="Digite seu nome" tabindex="1" aria-required="true" data-error="*Insira seu nome" required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="RA">R.A:</label>
-							<input type="number" class="form-control" name="ra-fale-contato" id="ra-fale-contato" placeholder="Somente números" tabindex="2" aria-required="true" required>
+							<input type="number" class="form-control" name="ra-fale-contato" id="ra-fale-contato" placeholder="Somente números" tabindex="2" aria-required="true" data-error="*Insira seu R.A" required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="Email">E-mail:</label>
 							<div class="input-group">
 								<div class="input-group-addon">@</div>
-				      				<input type="email" class="form-control" name="email-fale-contato" id="email-fale-contato" placeholder="Digite seu e-mail" tabindex="3" aria-required="true" required>
+				      				<input type="email" class="form-control" name="email-fale-contato" id="email-fale-contato" placeholder="Digite seu e-mail" tabindex="3" aria-required="true" data-error="*Insira seu e-mail" required>
 			      			</div>
+			      			<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="Curso">Curso:</label>
@@ -72,32 +70,35 @@
 						</div>
 						<div class="form-group">
 							<label for="Periodo">Período:</label>
-							<select class="form-control" id="periodo-fale-contato" data-validation-required-message="Campo obrigatório" tabindex="5" aria-required="true" required>
+							<select class="form-control" id="periodo-fale-contato" data-validation-required-message="Campo obrigatório" tabindex="5" aria-required="true" data-error="*Insira o seu período de curso" required>
 								<option value="" selected disabled>Selecione o período</option>
 								<option value="manha">Manhã</option>
 								<option value="tarde">Tarde</option>
 								<option value="noite">Noite</option>
 							</select>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="Assunto">Assunto:</label>
-							<select class="form-control" id="assunto-fale-contato" onchange="escondediv(oculta, assunto);" tabindex="6" aria-required="true" required>
+							<select class="form-control" id="assunto-fale-contato" onchange="escondedivAssunto(ocultaAssunto, assunto);" tabindex="6" aria-required="true" data-error="*Selecione o assunto" required>
 								<option value="" selected disabled>Qual o assunto?</option>
 								<option value="sugestao">Sugestão</option>
 								<option value="reclamacao">Reclamação</option>
 								<option value="elogio">Elogio</option>
 								<option value="outros">Outros</option>
 							</select>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<div id="oculta">
 								<label for="Qual">Qual?</label>
-								<input type="text" class="form-control" name="outros-fale-contato" id="outros-fale-contato" aria-required="true" required>
+								<input type="text" class="form-control" name="outros-fale-contato" id="outros-fale-contato" aria-required="true" data-error="*Insira qual o assunto de contato" required>
+								<div class="help-block with-errors"></div>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="Area">Área:</label>
-							<select class="form-control" id="area-fale-contato" tabindex="7" aria-required="true" required>
+							<select class="form-control" id="area-fale-contato" onchange="escondedivArea(ocultaArea, area);" tabindex="7" aria-required="true" data-error="*Selecione a área direcionada para entrar em contato" required>
 								<option value="" selected disabled>Seleciona a área</option>
 								<option value="coord">Coordenação</option>
 								<option value="secretaria">Secretaria</option>
@@ -109,10 +110,19 @@
 								<option value="limpeza">Limpeza</option>
 								<option value="outros">Outros</option>
 							</select>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<div id="oculta">
+								<label for="Qual">Qual?</label>
+								<input type="text" class="form-control" name="outros-fale-contato" id="outros-fale-contato" aria-required="true" data-error="*Insira qual o assunto de contato" required>
+								<div class="help-block with-errors"></div>
+							</div>
 						</div>
 						<div class="form-group">
 							<label for="Mensagem">Mensagem:</label>
-							<textarea class="form-control" name="msg-fale-contato" id="msg-fale-contato" rols="10" cols="50" tabindex="8" aria-required="true" required></textarea>
+							<textarea class="form-control" name="msg-fale-contato" id="msg-fale-contato" rols="10" cols="50" tabindex="8" aria-required="true" data-error="*Digite a mensagem" required></textarea>
+							<div class="help-block with-errors"></div>
 						</div>
 						<button type="submit" class="btn btn-primary" name="enviar" tabindex="9">Enviar</button>
 						<button type="reset" class="btn btn-primary" name="limpar" tabindex="10">Limpar</button>

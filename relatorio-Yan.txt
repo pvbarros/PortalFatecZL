@@ -1,0 +1,67 @@
+MENU SECRETARIA
+	 
+	- Primeiro foi feito o sub menu "Informações e Documentos", seguindo o protótipo feito para desenvolvimento do Front. Nas respostas colhidas do "questionário para os alunos", o tipo de informação que mais pediram foi que tivessem os horários da secretaria e documentos no site. Entretanto, essas informações já existem no site, o que fizemos foi evidenciar esse conteúdo para que o aluno ache a informação de forma rápida e não necessite de agilidade ou conhecimento prévio do site para saber onde encontrar o conteúdo. Deixamos mais intuitivo para que o aluno vá direto na informação que procura e está precisando no momento.
+	
+
+	- Em seguida, foi desenvolvido o sub menu "Transferência". Esse tópico não foi citado em nenhum momento nas respostas do questionário para o alunos. Por isso, não mexemos no conteúdo que apresenta atualmente, somente evidenciamos as informações. Como o foco é atender a necessidade do aluno, foi decidido em conjunto que os resultados seriam documentos anexados no site e não uma tabela dinâmica.
+	
+
+	MENU NOTICIAS 
+	
+
+	- Desenvolvido o menu "Notícias". Esse menu serve para o aluno que quer buscar sobre avisos, notícias e/ou recados mais antigos. No gerenciador de conteúdo tem uma caixa disponível com os "posts" mais antigos, caso o funcionário queira republicar ou fazer alguma alteração. Porém, o aluno não tem esse mesmo recurso, ficando limitado as últimas notícias na página inicial. Com o menu "Notícias", o aluno pode filtrar sobre os assunto de seu interesse no campo "Categoria" para vir todos os posts relacionados àquele assunto. Caso queira fazer uma pesquisa direta, tem disponível o campo "Buscar" que irá trazer posts com palavras relacionadas a que foi colocada no buscador.
+	
+
+	MENU TCC
+	
+
+	- Desenvolvido o sub menu "Ficha Catalográfica". Nas respostas colhidas do "questionário para os alunos" não apareceram respostas relacionadas diretamente a ficha catalográfica, citaram sobre a busca de TCCs mais antigos. Entretanto, como está sendo seguido o protótipo do sitemap do TCC do aluno André Galvão, os sub menus "Ficha Catalográfica" e "Buscar TCC" saem do menu "Insititucional", que é apresentado atualmente no site, e vão para um menu próprio relacionado ao TCC. Dessa forma fica mais intuitivo, fazendo com que o aluno seja direcionado á informação que procura, não necessitando de um conhecimento prévio sobre os caminhos do site, onde cada informação está. 
+	  
+	- Desenvolvido o sub menu "Pesquisar TCC''. Nas respostas colhidas do "questionário para os alunos", tiveram bastante respostas similares pedindo a busca dos TCCs. Entretanto, essa solução já existe no site, o que fizemos foi evidenciar as informações seguindo o sitemap do TCC do aluno André Galvão. A tabela era apresentada de forma estática com um número de linhas pré estabelecido. Se a lista da buca de TCCs retornasse com um número maior do que o número de linhas, a lista excedia e ultrapassava o rodapé, dificultando para quem quer ver as informações de determinado TCC. Além disso, validamos para que os campos ANO-SEMESTRE e CURSO sejam obrigatórios na busca.
+	
+
+	MENU BIBLIOTECA
+	
+
+	- Desenvolvido o sub menu "Informações". Nas respostas colhidas do "questionário para os alunos" não foi citado sobre as informações gerais da biblioteca como horário de atendimento ou empréstimo. Por isso, no desenvolvimento, foi classificado como "baixa prioridade" e não houve mudanças no quesito das informações contidas no sub menu, elas apenas foram evidenciadas.
+	
+
+	Desenvolvido o sub menu "Consultar Acervo". Nas respostas colhidas do "questionário para os alunos", a busca ao acervo da biblioteca foi citado, diferentemente do sub menu "Informações". Entretanto, na priorização das respostas colhidas do questionário, esse sub menu ficou em "baixa prioridade" por ser uma solução já existente. Notamos que da forma que era apresentada (dentro de um iframe), em relação a busca do livro, a performance era comprometida e por dispositivo móvel não dava para faze a busca, pois o iframe não era responsivo e comprometia a experiência do usuário. Seguindo o sitemap do André Galvão, fizemos um link em nova guia no sub menu "Consultar Acervo" para que o usuário realize a busca no site já existente para consulta de livro.
+	
+
+	MENU MSDNAA
+	
+
+	- Desenvolvido o sub menu "MSDNAA - Suporte". Nas respostas colhidas do "questionário para os alunos", não houveram respostas que citassem sobre esse sub menu. Não mexemos em sua estrutura atual, nem nas validações já existentes no form. Houve mudança apenas no design do site.
+	
+
+	MENU CONTATO
+	
+
+	- Desenvolvido o sub menu "Suporte DTI". Nas respostas colhidas do "questionário para os alunos", não houveram respostas que citassem sobre esse sub menu. Não mexemos em sua estrutura atual, nem nas validações já existentes no form. Houve mudança apenas no design do site.
+	
+
+	- Desenvolvido sub menu "Fale com a Fatec".  Nas respostas colhidas do "questionário para os alunos", não houveram respostas que citassem sobre esse sub menu. Não mexemos em sua estrutura atual, nem nas validações já existentes no form. Houve mudança apenas no design do site.
+
+MENU ESTUDANTE
+	O menu estudante é uma reformulação do menu aluno: Primeiramente foi feito uma aba para mostrar o calendário acadêmico que poderá ser consultado sempre que necessário pelos alunos, em seguida foi criado uma aba para informações do diretório acadêmico, possuindo contatos e o que se trata o DA. A aba de estágio apenas foi reformulado a disposição das informações que ja continha antes, a novidade deste menu fica por conta da aba monitoria, onde será acrescentado os monitores de cada disciplina e o contato deles.
+   
+MENU CURSOS
+	O menu cursos foi dividido em submenus para cada curso disponível na instituição, dessa forma temos uma melhora na navegação, visto que o anterior misturava todas as informações em uma mesma página.
+
+MENU INSTITUCIONAL
+	O menu institucional foi construído em submenus com informações sobre a história e infraestrutura da instituição, além de ter sido acrescentado o corpo docente. A novidade deste menu é o submenu ache o professor que nas pesquisas com os alunos foi pedido para facilitar o contato entre eles e os professores na instituição.
+	
+
+	Links úteis: 
+	- TextArea c/ edição de texto: https://www.satellasoft.com/?materia=transformando-textarea-em-um-editor-de-texto-com-ckeditor
+	- Multi level menu: https://codepen.io/ajaypatelaj/pen/prHjD
+	- Tela login: https://bootstrapmade.com/demo/Flexor/
+	- Validator: https://webdevacademy.com.br/tutoriais/validacao-formularios-bootstrap-validator/
+	- Carrossel: 
+		https://gist.github.com/thassiov/25debc54fa5aef55fb20798726f9ac20
+		https://forum.imasters.com.br/topic/563015-corrigir-largura-de-imagem-no-bootstrap-carousel/
+		https://pt.stackoverflow.com/questions/266368/inserir-t%C3%ADtulos-dos-itens-na-lateral-carousel-bootstrap
+	- Form grid: ver documentação do bootstrap 4.0
+
+

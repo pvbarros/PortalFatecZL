@@ -11,45 +11,68 @@
 </head>
 <body>
 
-	<!-- LOGIN -->
-	<!--<section class="container">
-		
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<h2 class="container titulo-depoimentos">Depoimentos de Clientes</h2>
-			</div>
-		</div>
-
-	</section>-->
-
 	<section class="container">
 
 		<h2 class="container titulo-gerenciador">Gerenciador de Destaques</h2>
 
+		<!-- FORM GERENCIADOR DESTAQUES -->
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<div class="well">
-					<form id="form-gerenciador-destaques" data-toggle="validator" method="post" action="gerenciadorDestaques.js">
+					<form id="form-gerenciador-destaques" data-toggle="validator" method="post" action="gerenciador_destaques.js">
 						<div class="form-group">
-							<input type="image" name="inputImagemDestaques" class="form-control">
+							<label for="imagemDestaques">Imagem:</label>
+							<input type="file" name="inputImagemDestaques" class="form-control" data-error="*Selecione uma imagem" required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="tituloDestaques">Título:</label>
-							<input type="text" name="inputTituloDestaques" class="form-control" placeholder="Digite o título do destaque">
+							<input type="text" name="inputTituloDestaques" class="form-control" placeholder="Digite o título do destaque" data-error="*Insira um título para o destaque" maxlength="32" required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="subTituloDestaques">Subtítulo:</label>
-							<input type="text" name="inputSubtituloDestaques" class="form-control" placeholder="Digite o subtítulo do destaque">
-						</div>					
+							<input type="text" name="inputSubtituloDestaques" class="form-control" placeholder="Digite o subtítulo do destaque" maxlength="25">
+						</div>
+						<div class="form-group">
+							<label for="linkDestaques">Link:</label>
+							<input type="url" name="inputLinkDestaques" class="form-control" placeholder="Insira um link, caso queira que a notícia seja redirecionada em outro guia">
+						</div>
+						<div class="form-group crud-destaques">
+							<button type="submit" class="btn btn-success titulo-uppercase" name="salvar" formmethod="post">
+								<i class="glyphicon glyphicon-floppy-saved"></i> <strong>Salvar</strong></button>
+							<button type="submit" class="btn btn-danger titulo-uppercase" name="excluir" formmethod="post">
+								<i class="glyphicon glyphicon-floppy-remove"></i> <strong>Excluir</strong></button>
+							<button type="button" class="btn btn-primary titulo-uppercase" name="cancelar">
+								<i class="glyphicon glyphicon-ban-circle"></i> <strong>Cancelar</strong></button>
+						</div>	
 					</form>
+
+					<!--LISTA DE DESTAQUES ANTIGOS -->
+					<div class="lista-destaques" id="lista-destaques">
+						<ul class="list-group" method="get" action="lista_destaques.js">
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-
-
-		</div>
+		<hr>
 	</section>
-
 
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>

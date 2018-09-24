@@ -47,12 +47,14 @@
 							<label for="EmailAluno">E-mail do aluno:</label>
 							<div class="input-group">
 								<div class="input-group-addon">@</div>
-				      				<input type="email" class="form-control" name="email-aluno" id="email-aluno" size="40" placeholder="Digite um e-mail válido" aria-required="true" tabindex="1" required>
+				      				<input type="email" class="form-control" name="email-aluno" id="email-aluno" size="40" placeholder="Digite um e-mail válido" aria-required="true" tabindex="1" data-error="*Insira um e-mail" required>
 			      			</div>
+			      			<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="NomeAutor1">Nome do autor 1:</label>
-							<input type="text" class="form-control" name="nome-aluno1" id="nome-aluno1" size="40" placeholder="Nome completo" aria-required="true" tabindex="2" required>
+							<input type="text" class="form-control" name="nome-aluno1" id="nome-aluno1" size="40" placeholder="Nome completo" aria-required="true" tabindex="2" data-error="*Insira o primeiro nome" required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="NomeAutor1">Nome do autor 2:</label>
@@ -72,11 +74,12 @@
 						</div>
 						<div class="form-group">
 							<label for="NomeOrientador">Orientador:</label>
-							<input type="text" class="form-control" name="nome-orientador" id="nome-orientador" size="40" placeholder="Nome do professor orientador" aria-required="true" tabindex="7" required>
+							<input type="text" class="form-control" name="nome-orientador" id="nome-orientador" size="40" placeholder="Nome do professor orientador" aria-required="true" tabindex="7" data-error="*Insira o nome do orientador" required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="Curso">Curso:</label>
-							<select class="form-control" id="selecionar-curso" tabindex="8" aria-required="true" required>
+							<select class="form-control" id="selecionar-curso" tabindex="8" aria-required="true" data-error="*Selecione o curso" required>
 								<option value="" selected disabled>Selecione seu curso</option>
 								<option value="ads">Análise e Desenvolvimento de Sistemas</option>
 								<option value="comex">Comércio Exterior</option>
@@ -86,26 +89,32 @@
 								<option value="polimeros">Polímeros</option>
 								<div class="help-block with-errors"></div>
 							</select>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="TituloTrabalho">Título do trabalho:</label>
-							<input type="text" class="form-control" name="titulo-trabalho" id="titulo-trabalho" size="40" placeholder="Digite o título" aria-required="true" tabindex="9" required>
+							<input type="text" class="form-control" name="titulo-trabalho" id="titulo-trabalho" size="40" placeholder="Digite o título" aria-required="true" tabindex="9" data-error="*Insira o título do trabalho" required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="AnoDefesa">Ano da defesa:</label>
-							<input type="text" class="form-control" name="ano-defesa" id="ano-defesa" size="4" placeholder="Ano da defesa do trabalho" aria-required="true" tabindex="10" required="">
+							<input type="text" class="form-control" name="ano-defesa" id="ano-defesa" maxlength="4" placeholder="Ano da defesa do trabalho" aria-required="true" tabindex="10" data-error="*Insira o ano da defesa" required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="NumeroPaginas">Número de páginas:</label>
-							<input type="number" class="form-control" name="numero-paginas" id="numero-paginas" size="40"aria-required="true" tabindex="11" required>
+							<input type="number" class="form-control" name="numero-paginas" id="numero-paginas" size="40" aria-required="true" tabindex="11" data-error="*Insira o número de páginas do trabalho" required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="ResumoTrabalho">Resumo do trabalho:</label>
-							<textarea class="form-control" name="resumo-trabalho" id="resumo-trabalho" rows="10" cols="40" aria-required="true" tabindex="12" required></textarea>
+							<textarea class="form-control" name="resumo-trabalho" id="resumo-trabalho" rows="10" cols="40" aria-required="true" tabindex="12" data-error="*Escreva o resumo do seu trabalho" required></textarea>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
 							<label for="PalavrasChave">Palavras chave:</label>
-							<input type="text" class="form-control" name="palavras-chave" size="40" id="palavras-chave" placeholder="Digite as palavras chave do seu trabalho" aria-required="true" tabindex="13" required">
+							<input type="text" class="form-control" name="palavras-chave" size="40" id="palavras-chave" placeholder="Digite as palavras chave do seu trabalho" aria-required="true" tabindex="13" data-error="*Insira as palavras chave do trabalho" required">
+							<div class="help-block with-errors"></div>
 						</div>
 						<button type="submit" class="btn btn-primary" name="enviar-ficha" tabindex="14">Enviar Ficha</button>
 						<button type="reset" class="btn btn-primary" name="limpar" tabindex="15">Limpar</button>

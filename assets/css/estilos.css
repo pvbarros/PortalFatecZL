@@ -310,7 +310,9 @@ i.glyphicon-chevron-down{
 /*-------------------------*/
 
 
-/* GERENCIADOR NOTICIAS */
+/*-------------------------------GERENCIADORES-------------------------------*/
+
+/* --GERENCIADOR PATTERN-- */
 .titulo-gerenciador {
 	background-color: #0275D8;
 	padding-top: 25px;
@@ -321,4 +323,9 @@ i.glyphicon-chevron-down{
 	text-align: center;
 	text-transform: uppercase;
 }
-/*----------------------*/
+
+.list-group{
+	height: 300px;
+    overflow-y: auto;
+}
+/*------------------------*/
