@@ -72,3 +72,4 @@ Links úteis:
 	https://forum.imasters.com.br/topic/563015-corrigir-largura-de-imagem-no-bootstrap-carousel/
 	https://pt.stackoverflow.com/questions/266368/inserir-t%C3%ADtulos-dos-itens-na-lateral-carousel-bootstrap
 - Form grid: ver documentação do bootstrap 4.0
+- Exibir confirmação de exclusão: http://bootboxjs.com/documentation.html
