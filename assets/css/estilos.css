@@ -129,16 +129,16 @@ textarea{
 
 
 /* SEÇÃO CARROSSEL */
-.fixedHeightImg > img {
+/*.fixedHeightImg > img {
     max-height: 500px;
     margin-left: auto;
     margin-right: auto;
     width: auto;
- }
+}
 
  .patternImage{
- 	height: 500px;
- }
+ 	height: auto;
+ }*/
 
 .carousel-control.right,
 .carousel-control.left{
@@ -156,10 +156,6 @@ figcaption.carousel-caption{
 	opacity: .20;
 	transition: background-color 0.2s ease-out;
 }
-
-/*.overlay:hover{
-	background-color: #fff;
-}*/
 /*----------------------*/
 
 
