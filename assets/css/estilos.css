@@ -85,6 +85,10 @@ textarea{
 	background-color: #fffff0;
 }
 
+.b-header{
+	background-color: #fffff0;
+}
+
 .b-container{
 	padding-left: 30px;
 	padding-right: 15px;
@@ -192,6 +196,19 @@ a:link{
 
 .horario-noticias{
 	font-size: 11px;
+}
+/*----------------------*/
+
+
+/* -- EDITOR DE TEXTO --*/
+div#editor {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+}
+
+#edit {
+  margin-top: 30px;
 }
 /*----------------------*/
 
@@ -344,17 +361,6 @@ i.glyphicon-chevron-down{
 /*-------------------------------GERENCIADORES-------------------------------*/
 
 /* --GERENCIADOR PATTERN-- */
-.titulo-gerenciador {
-	background-color: #0275D8;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	color: #FFF;
-	margin-bottom: 0;
-	font-size: 24px;
-	text-align: center;
-	text-transform: uppercase;
-}
-
 .list-group{
 	height: 300px;
     overflow-y: auto;

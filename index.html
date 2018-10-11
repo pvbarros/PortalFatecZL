@@ -1,260 +1,259 @@
-<!doctype html>
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
 		<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<title>Faculdade de Tecnologia da Zona Leste</title>
-</head>
-<body>
 
-	<!-- SEÇÃO DESTAQUES -->
-	<section id="destaques" class="destaques">
+		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="assets/froala-editor/css/froala_editor.css">
+	    <link rel="stylesheet" href="assets/froala-editor/css/froala_style.css">
+	    <link rel="stylesheet" href="assets/froala-editor/css/plugins/code_view.css">
+	    <link rel="stylesheet" href="assets/froala-editor/css/plugins/image_manager.css">
+	    <link rel="stylesheet" href="assets/froala-editor/css/plugins/image.css">
+	    <link rel="stylesheet" href="assets/froala-editor/css/plugins/table.css">
+	    <link rel="stylesheet" href="assets/froala-editor/css/plugins/video.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
 
-		<div id="carrossel-destaques" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#carrossel-destaques" data-slide-to="0" class="active"></li>
-				<li data-target="#carrossel-destaques" data-slide-to="1"></li>
-				<li data-target="#carrossel-destaques" data-slide-to="2"></li>
-				<li data-target="#carrossel-destaques" data-slide-to="3"></li>
-			</ol>
+	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/froala_editor.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/plugins/align.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/plugins/code_beautifier.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/plugins/code_view.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/plugins/draggable.min.js"></script>
+ 		<script type="text/javascript" src="assets/froala-editor/js/plugins/image.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/plugins/image_manager.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/plugins/link.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/plugins/lists.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/plugins/paragraph_format.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/plugins/paragraph_style.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/plugins/table.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/plugins/video.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/plugins/url.min.js"></script>
+  		<script type="text/javascript" src="assets/froala-editor/js/plugins/entities.min.js"></script>
 
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-				<figure class="item active">
-					<a href="#">
-						<img class="img-hover center-block" src="assets/img/logo/FATEC_ZONA_LESTE.png" href="header.html" alt="Primeiro destaque">
-					</a>
-					<figcaption class="carousel-caption">
-						<h3 class="titulo-destaques">Yuri Padilha</h3>
-						<h4 class="conteudo-destaques">Gostei muito e achei rápido o serviço.</h4>
-					</figcaption>
-				</figure>
-				<figure class="item">
-					<a href="#">
-						<img class="img-hover center-block" src="assets/img/destaques/post_2018.jpg" alt="Segundo destaque">
-					</a>
-					<figcaption class="carousel-caption">
-						<h3 class="titulo-destaques">Fernando Stafaneni</h3>
-						<h4 class="conteudo-destaques">Excelente trabalho.</h4>
-					</figcaption>
-				</figure>
-				<figure class="item">
-					<a href="#">
-						<img class="img-hover center-block" src="assets/img/destaques/projetos2.png" alt="Terceiro destaque">
-					</a>
-					<figcaption class="carousel-caption">
-						<h3 class="titulo-destaques">Caio Sauzas</h3>
-						<h4 class="conteudo-destaques">Gostei, competência em primeiro lugar.</h4>
-					</figcaption>
-				</figure>
-				<figure class="item">
-					<a href="#">
-						<img class="img-hover center-block" src="assets/img/destaques/projetos2.png" alt="Quarto destaque">
-					</a>
-					<figcaption class="carousel-caption">
-						<h3 class="titulo-destaques">Caio Sauzas</h3>
-						<h4 class="conteudo-destaques">Gostei, competência em primeiro lugar. kkkkkkkkkkkkkkkkkkaaaaaaaaaaaaaaaaaaaa</h4>
-					</figcaption>
-				</figure>
-			</div>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	</head>
 
-			<a class="left carousel-control" href="#carrossel-destaques" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#carrossel-destaques" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-	</section>
+	<body>
 
-	<!-- SEÇÃO NOTICIAS / AVISOS -->
-	<section id="nossos-projetos" class="container">
-		<hr>
-		<h3 class="titulo-uppercase"><strong>Últimas Notícias</strong></h3>
-		<hr>
+		<!-- CABEÇALHO -->     
+      <header class="b-header" id="top">
+            
+            <!-- SEÇÃO ÁREA LOGIN PARA ADMINISTRADORES -->
+            <section class="container area-login">
 
-		<div class="row" data-toggle="validator">
-			<div class="col-sm-6 col-md-4">
-				<figure class="thumbnail">
-					<a class="link-noticia" href="#">
-						<img class="img-responsive img-rounded img-hover" src="assets/img/noticias/vestibular 2018-2.png" alt="Notícias">
-					</a>
-					<figcaption class="caption">
-						<p class="horario-noticias"><i class="glyphicon glyphicon-time horario-post"></i> Postado em 23 de agosto, 2018 às 14:00</p>
-						<h3 id="titulo-noticias" class="noticia-post-titulo" size="32">
-							<a class="link-noticia" href="#">Vestibular</a>
-						</h3>
-						<p class="conteudo-noticias">
-							Não perca a oportunidade de ingressar na Fatec ijdsjidsjfidjfdi djfkmkcsad ijdifdsfdjf kdksaodkaso ddnfdfjdifjdi d fdksopkdsa difjdisfj 
-						</p>
-						<button type="button" class="btn btn-primary">Ver mais</button>
-					</figcaption>
-				</figure>
-			</div>
+                  <div class="social-nav">
+                        <ul class="list-unstyled list-inline list-social-icons">
+                              <li>
+                                    <a href="https://www.facebook.com/fateczl" target="_blank">
+                                          <i class="fa fa-facebook-square fa-2x"></i>
+                                    </a>
+                              </li>
+                              <li>
+                                    <a href="https://www.instagram.com/fateczonaleste/" target="_blank">
+                                          <i class="fa fa-instagram fa-2x"></i>
+                                    </a>
+                              </li>
+                              <li>
+                                    <a href="https://twitter.com/fateczonaleste" target="_blank">
+                                          <i class="fa fa-twitter-square fa-2x"></i>
+                                    </a>
+                              </li>
+                        </ul>
+                  </div>
 
-			<div class="col-sm-6 col-md-4">
-				<figure class="thumbnail">
-					<a class="link-noticia" href="#">
-						<img class="img-responsive img-rounded img-hover" src="assets/img/noticias/empresa.jpg" alt="Notícias">
-					</a>
-					<figcaption class="caption">
-						<p class="horario-noticias"><i class="glyphicon glyphicon-time horario-post"></i> Postado em 23 de agosto, 2018 às 14:00</p>
-						<h3 id="titulo-noticias" class="noticia-post-titulo" size="32">
-							<a class="link-noticia" href="#">Processo de Transferencia 2018-2</a>
-						</h3>
-						<p class="conteudo-noticias">
-							Veja se você conseguiu.
-						</p>
-						<button type="button" class="btn btn-primary">Ver mais</button>
-					</figcaption>
-				</figure>
-			</div>
+            <div class="login"> 
+                   <button type="button" class="btn btn-light">
+                        <i class="fa fa-user fa-lg"></i> Login</button>
+                  </div>
+            </section>
 
-			<div class="col-sm-6 col-md-4">
-				<figure class="thumbnail">
-					<a class="link-noticia" href="#">
-						<img class="img-responsive img-rounded img-hover" src="assets/img/noticias/mercado-marapira.png" alt="Notícias">
-					</a>
-					<figcaption class="caption">
-						<p class="horario-noticias"><i class="glyphicon glyphicon-time horario-post"></i> Postado em 23 de agosto, 2018 às 14:00</p>
-						<h3 id="titulo-noticias" class="noticia-post-titulo" size="32">
-							<a class="link-noticia" href="#">Casa Castelo</a>
-						</h3>
-						<p class="conteudo-noticias">
-							O mercado Marapira foi projetado nos mínimos detalhes na arquitetura baseada em frutas. disjdisajdioasjdisajdisjdijsad sdiosjdisadj asdisajd sidjsi dsaijdsa disjad siadjsa dsai dsiad sajid sadis dsiadja s
-						</p>
-						<button type="button" class="btn btn-primary">Ver mais</button>
-					</figcaption>
-				</figure>
-			</div>
+            <!-- CONTAINER NAVBAR MENUS-->
+            <nav class="navbar navbar-inner">
+                  <div class="container b-container">
+                              
+                  <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-left b-logo" href="#">
+                              <img class="img-responsive" src="assets/img/logo/FATEC-zl-logo.png">
+                        </a>
+                  </div>
+                  
+                  <div class="collapse navbar-collapse b-navcollapse" id="collapse-navbar">
+                        <ul class="nav navbar-nav navbar-right">
+                              <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle b-menu" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Institucional <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                          <li><a href="institucional_historia.html">História</a></li>
+                                          <li><a href="institucional_infraestrutura.html">Infraestrutura</a></li>
+                                          <li><a href="institucional_corpo_docente.html">Corpo Docente</a></li>
+                                          <li><a href="https://urhsistemas.cps.sp.gov.br/dgsdad/selecaopublica/" target="_blank">Concursos</a></li>
+                                          <li><a href="#">Regulamento Interno</a></li>
+                                          <li><a href="institucional_ache_o_professor.html">Ache o Professor</a></li>
+                                    </ul>
+                              </li>
+                              <li class="dropdown" role="presentation">
+                                    <a href="#" class="dropdown-toggle b-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estudante <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                          <li><a href="estudante_calendario_academico.html">Calendário Acadêmico</a></li>
+                                          <li class="divider"></li>
+                                          <li><a href="estudante_estagio.html">Estágio - Horários e Documentos</a></li>
+                                          <li><a href="http://estagiosfateczl.blogspot.com/2017/10/programa-de-estagios.html" target="_blank">Oportunidades de estágio</a></li>
+                                          <li class="divider"></li>
+                                          <li><a href="estudante_monitoria.html">Monitoria</a></li>
+                                          <li><a href="estudante_diretorio_academico.html">Diretório Acadêmico</a></li>
+                                          <li><a href="http://atleticazonaleste.wixsite.com/atleticafateczl" target="_blank">Atlética</a></li>
+                                    </ul>
+                              </li>
+                              <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle b-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cursos <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                          <li><a href="cursos_ads.html">Análise e Desenvolvimento de Sistemas</a></li>
+                                          <li><a href="cursos_comex.html">Comércio Exterior</a></li>
+                                          <li><a href="cursos_gestao_empresarial.html">Gestão Empresarial</a></li>
+                                          <li><a href="cursos_logistica.html">Logística</a></li>
+                                          <li><a href="cursos_polimeros.html">Polímeros</a></li>
+                                    </ul>
+                              </li>
+                              <li>
+                                    <a class="b-menu" href="noticias.html">Notícias</a>
+                              </li>
+                              <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle b-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Biblioteca <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                          <li><a href="biblioteca_infos.html">Informações</a></li>
+                                          <li><a href="http://fateczl.edu.br/openbiblio/opac/index.php" target="_blank">Consultar Acervo</a></li>
+                                    </ul>
+                              </li>
+                              <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle b-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Secretaria <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                          <li><a href="secretaria_horarios_e_docs.html">Horário e Documentos</a></li>
+                                          <li><a href="secretaria_transferencia.html">Transferência</a></li>
+                                    </ul>
+                              </li>
+                              <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle b-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TCC <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                          <li><a href="tcc_ficha_catalografica.html">Ficha Catalográfica</a></li>
+                                          <li><a href="tcc_pesquisar_tcc.html">Pesquisar TCC</a></li>
+                                    </ul>
+                              </li>
+                              <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle b-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contato <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                          <li><a href="contato_fale_fatec.html">Fale com a Fatec</a></li>
+                                          <li><a href="contato_suporte_dti.html">Suporte DTI</a></li>
+                                    </ul>
+                              </li>
+                              <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle b-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MSDNAA <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                          <li><a href="msdnaa_suporte.html">Suporte MSDNAA</a></li>
+                                          <li><a href="https://login.microsoftonline.com/" target="_blank">E-mail Institucional</a></li>
+                                          <li><a href="https://fatec.onthehub.com/WebStore/Welcome.aspx" target="_blank">Microsoft Imagine</a></li>
+                                    </ul>
+                              </li>
+                              <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle b-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SIGA <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                          <li><a href="https://siga.cps.sp.gov.br/aluno" target="_blank">Aluno</a></li>
+                                          <li><a href="https://siga.cps.sp.gov.br/fatec" target="_blank">Professor</a></li>
+                                    </ul>
+                              </li>
+                              <li>
+                                    <a class="b-menu" href="http://www.eadfatec.cps.sp.gov.br/" target="_blank">EAD</a>
+                              </li>
+                        </ul>
+                  </div>
+            </div>      
+            </nav>
+      </header>
 
-			<div class="col-sm-6 col-md-4">
-				<figure class="thumbnail">
-					<a class="link-noticia" href="#">
-						<img class="img-responsive img-rounded img-hover" src="assets/img/noticias/palacio-dionisio.png" alt="">
-					</a>
-					<figcaption class="caption">
-						<p class="horario-noticias"><i class="glyphicon glyphicon-time horario-post"></i> Postado em 23 de agosto, 2018 às 14:00</p>
-						<h3 id="titulo-noticias" class="noticia-post-titulo" size="32">
-							<a class="link-noticia" href="#">Palácio Dionísio</a>
-						</h3>
-						<p class="conteudo-noticias">
-							O palácio Dionísio foi eleito pela revista 'Grandes palácios' como o palácio mais lindo do mundo. dsoadjsaidjisadjsa dsaidjsaidjsdisjd saidojsaidjsaidjsa dsaioodjsaiodjsdis adisadjsaidjsaid saoidjs adjisadisja disaodj sa
-						</p>
-						<button type="button" class="btn btn-primary">Ver mais</button>
-					</figcaption>
-				</figure>
-			</div>
+      <ng-view></ng-view>
 
-			<div class="col-sm-6 col-md-4">
-				<figure class="thumbnail">
-					<a class="link-noticia" href="#">
-						<img class="img-responsive img-rounded img-hover" src="assets/img/noticias/residencia-ludi.png" alt="">
-					</a>
-					<figcaption class="caption">
-						<p class="horario-noticias"><i class="glyphicon glyphicon-time horario-post"></i> Postado em 23 de agosto, 2018 às 14:00</p>
-						<h3 id="titulo-noticias" class="noticia-post-titulo" size="32">
-							<a class="link-noticia" href="#">Residência Ludi</a>
-						</h3>
-						<p class="conteudo-noticias">
-							A residência Ludi foi projetada para ser a mais bela casa de São Paulo pela revista Housing. asdisjdisjadoijs dsijajdiasdjsaid isjdsa dsjadi sadiosajdoisajdsjadiosajd sadisjdiosadj 
-						</p>
-						<button type="button" class="btn btn-primary">Ver mais</button>
-					</figcaption>
-				</figure>
-			</div>
+      <!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="row">
 
-			<div class="col-sm-6 col-md-4">
-				<figure class="thumbnail">
-					<a class="link-noticia" href="#">
-						<img class="img-responsive img-rounded img-hover" src="assets/img/noticias/residencia-ludi.png" alt="">
-					</a>
-					<figcaption class="caption">
-						<p class="horario-noticias"><i class="glyphicon glyphicon-time horario-post"></i> Postado em 23 de agosto, 2018 às 14:00</p>
-						<h3 id="titulo-noticias" class="noticia-post-titulo" size="32">
-							<a class="link-noticia" href="#">Residência Ludi</a>
-						</h3>
-						<p class="conteudo-noticias">
-							A residência Ludi foi projetada para ser a mais bela casa de São Paulo pela revista Housing. sauhdasuidhsuadhs saidjsaidjisjd sijsidjsiojdsaidj
-						</p>
-						<button type="button" class="btn btn-primary">Ver mais</button>
-					</figcaption>
-				</figure>
-			</div>
-		</div>
-		<hr>
-	</section>
-	<!--<a href="#top" class="back-to-top"> Back to top </a>
-	<button id="top" style="background-color: rgb(140, 140, 140); transform: translateX(0px); opacity: 0.8;"><img src="/top.svg" alt="^"></button>
-<img src="/top.svg" alt="^">-->
+				<!-- REDES SOCIAIS -->
+				<div class="col-md-4">
+					<h4 class="titulo-rodape page-header"><strong>Nos encontre nas mídias sociais <i class="fa fa-thumbs-up"></i></strong></h4>
+					<hr>
+					<div class="conteudo-rodape">
+						<ul class="list-unstyled list-inline list-social-icons">
+                              <li>
+                                    <a href="https://www.facebook.com/fateczl" target="_blank">
+                                          <i class="fa fa-facebook-square fa-2x"></i>
+                                    </a>
+                              </li>
+                              <li>
+                                    <a href="https://www.instagram.com/fateczonaleste/" target="_blank">
+                                          <i class="fa fa-instagram fa-2x"></i>
+                                    </a>
+                              </li>
+                              <li>
+                                    <a href="https://twitter.com/fateczonaleste" target="_blank">
+                                          <i class="fa fa-twitter-square fa-2x"></i>
+                                    </a>
+                              </li>
+                        </ul>
+	                </div>
+				</div>			
 
-	<!-- SEÇÃO INSTITUCIONAL E CONTATO -->
-	<div class="container">
-		<div class="row">
-
-			<!-- SEÇÃO VIDEO INSTITUCIONAL -->
-			<section id="video" class="col-sm-6">
-				<h3 class="titulo-uppercase"><strong>Video Institucional</strong></h3>
-				<hr>
-				<div class="embed-responsive embed-responsive-4by3">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/IPJa2paeN2c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<!-- ENDEREÇO FATEC -->
+				<div class="col-md-4">
+					<address>
+						<h4 class="titulo-rodape page-header"><strong>Localização <i class="fa fa-thumb-tack"></i></strong></h4>
+						<hr>
+						<div class="conteudo-rodape">
+							Avenida Águia de Haia, 2983, Cidade A.E Carvalho<br>
+							São Paulo, SP<br>
+							CEP 03694-000
+						</div>
+					</address>
 				</div>
-			</section>
 
-			<!-- SEÇÃO ENTRE EM CONTATO -->
-			<section id="contato" class="col-sm-6">
-				<h3 class="titulo-uppercase"><strong>Contato</strong> <small>Saiba onde nos encontrar</small></h3>
-				<hr>
+				<!-- CONTATO -->
+				<div class="col-md-4">
+					<h4 class="titulo-rodape page-header"><strong>Contato <i class="fa fa-phone"></i></strong></h4>
+					<hr>
+					<address>
+						<div class="conteudo-rodape">
+							(11) 2049-2600<br>
+							(11) 2026-0378<br>
+							(11) 2026-1303<br>
+							(11) 2041-2187<br>
+						</div>
+					</address>
+				</div>	
+			</div>
 
-				<!--ENDEREÇO -->
-				<p class="endereco"><i class="glyphicon glyphicon-map-marker"></i> 
-					Avenida Águia de Haia, 2983, Cidade A.E Carvalho
-                </p>
-
-                <!-- TELEFONES -->
-                <p class="telefone"><i class="glyphicon glyphicon-earphone"></i>
-                	 (11) 2049-2600
-                </p>
-
-                <p class="telefone"><i class="glyphicon glyphicon-earphone"></i> 
-                	(11) 2026-0378
-                </p>
-
-                <p class="telefone"><i class="glyphicon glyphicon-earphone"></i> 
-                	(11) 2026-1303
-                </p>
-
-                <p class="telefone"><i class="glyphicon glyphicon-earphone"></i> 
-                	(11) 2041-2187
-                </p>
-                
-                <!-- REDES SOCIAIS -->
-                <ul class="list-unstyled list-inline list-social-icons">
-                    <li>
-                        <a href="https://www.facebook.com/fateczl" target="_blank"><img class="icon-social" src="assets/img/icons/facebook-icon.png"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/fateczonaleste/" target="_blank"><img class="icon-social" src="assets/img/icons/instagram-icon.png"></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/fateczonaleste" target="_blank"><img class="icon-social" src="assets/img/icons/twitter-icon.png"></a>
-                    </li>
-                </ul>
-			</section>
+			<!-- LOGO CPS -->
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<h4 class="titulo-rodape page-header"><strong>Apoio</strong></h4>
+					<hr>
+					<img class="logo-rodape" src="assets/img/logo/logoCentro.png">
+				</div>
+			</div>
 		</div>
-	</div>
+	</footer>
+		
+	</body>
 
-	
-	<script src="assets/js/jquery.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/js/validator.min.js"></script>
-	<script src="assets/js/navbar-animation-fix.js"></script>
-</body>
 </html>
